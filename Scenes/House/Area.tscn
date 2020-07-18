@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=2]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 3.90275, 3.47846, 3.04379 )
+
+[sub_resource type="SphereShape" id=2]
+radius = 5.50089
+
+[node name="Area" type="Area"]
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.167921, 1.99952, 0.207698 )
+shape = SubResource( 1 )
+
+[node name="StaticBody" type="StaticBody" parent="." groups=[
+"Obs",
+]]
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.938818, 0 )
+shape = SubResource( 2 )

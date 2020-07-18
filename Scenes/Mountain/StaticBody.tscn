@@ -1,0 +1,42 @@
+[gd_scene load_steps=6 format=2]
+
+[sub_resource type="PhysicsMaterial" id=1]
+friction = 0.54
+bounce = 2.458
+
+[sub_resource type="SphereShape" id=2]
+radius = 10.5218
+
+[sub_resource type="SphereShape" id=3]
+radius = 5.90953
+
+[sub_resource type="SphereShape" id=4]
+radius = 4.3429
+
+[sub_resource type="SphereShape" id=5]
+radius = 8.14944
+
+[node name="StaticBody" type="StaticBody" groups=[
+"Obs",
+]]
+physics_material_override = SubResource( 1 )
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 0.954431, 0, 0, 0, 0.666597, 0, 0, 0, 0.954431, 1.5281, -3.09496, 0 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape5" type="CollisionShape" parent="."]
+transform = Transform( 0.836981, 0, 0, 0, 0.584567, 0, 0, 0, 0.836981, 1.5281, -0.490415, 0 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.495518, 4.54079, 0 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape4" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.495518, 8.00187, 0 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape3" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, 0.754711, 0, 0, 0, 1, 0.761145, 0.671562, 0 )
+shape = SubResource( 5 )

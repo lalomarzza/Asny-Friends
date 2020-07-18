@@ -1,0 +1,126 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scripts/Collision.gd" type="Script" id=1]
+[ext_resource path="res://Scenes/Rope/Ob.tscn" type="PackedScene" id=2]
+
+[node name="Obs" type="Spatial"]
+
+[node name="1" type="Spatial" parent="." instance=ExtResource( 2 )]
+transform = Transform( 0.985934, 0.0834544, 0.14481, -0.0117883, 0.898982, -0.437827, -0.16672, 0.429961, 0.887321, -0.166111, -6.46801, 15.82 )
+script = ExtResource( 1 )
+
+[node name="6" type="Spatial" parent="." instance=ExtResource( 2 )]
+transform = Transform( 0.994388, 0.104582, 0.0159548, -0.0736362, 0.792505, -0.605404, -0.0759586, 0.600831, 0.795759, -0.778476, -4.04855, 11.6432 )
+script = ExtResource( 1 )
+
+[node name="11" type="Spatial" parent="." instance=ExtResource( 2 )]
+transform = Transform( 0.9908, 0.102511, -0.088338, -0.134645, 0.681546, -0.719282, -0.0135281, 0.724559, 0.68908, -0.811752, -0.768544, 7.76965 )
+script = ExtResource( 1 )
+
+[node name="16" type="Spatial" parent="." instance=ExtResource( 2 )]
+transform = Transform( 0.985562, 0.0941695, -0.140704, -0.168789, 0.611566, -0.77298, 0.0132589, 0.78557, 0.618631, -0.449817, 2.85288, 4.43452 )
+script = ExtResource( 1 )
+
+[node name="21" type="Spatial" parent="." instance=ExtResource( 2 )]
+transform = Transform( 0.987217, 0.0943374, -0.128451, -0.159285, 0.610613, -0.775745, 0.00525193, 0.78629, 0.617834, 0.0327749, 6.68405, 1.24593 )
+script = ExtResource( 1 )
+
+[node name="26" type="Spatial" parent="." instance=ExtResource( 2 )]
+transform = Transform( 0.994324, 0.0993019, 0.0381447, -0.0508546, 0.758691, -0.649463, -0.0934327, 0.643837, 0.759436, 0.143217, 10.2839, -2.23378 )
+script = ExtResource( 1 )
+
+[node name="31" type="Spatial" parent="." instance=ExtResource( 2 )]
+transform = Transform( 0.873233, -0.0999085, 0.476948, 0.118015, 0.992979, -0.00806824, -0.472793, 0.0633318, 0.878894, -1.31672, 12.0007, -6.48849 )
+script = ExtResource( 1 )
+
+[node name="36" type="Spatial" parent="." instance=ExtResource( 2 )]
+transform = Transform( 0.567449, -0.172678, 0.805098, 0.0261934, 0.981054, 0.191955, -0.82299, -0.0878368, 0.561222, -4.6366, 10.9857, -10.065 )
+script = ExtResource( 1 )
+
+[node name="41" type="Spatial" parent="." instance=ExtResource( 2 )]
+transform = Transform( 0.226049, -0.237578, 0.9447, -0.0670663, 0.963706, 0.258405, -0.971802, -0.12177, 0.201912, -9.04198, 9.76967, -11.7858 )
+script = ExtResource( 1 )
+
+[node name="46" type="Spatial" parent="." instance=ExtResource( 2 )]
+transform = Transform( -0.268171, -0.461011, 0.845904, -0.252583, 0.880995, 0.40006, -0.929668, -0.106376, -0.352702, -13.6248, 8.0141, -11.2842 )
+script = ExtResource( 1 )
+
+[node name="51" type="Spatial" parent="." instance=ExtResource( 2 )]
+transform = Transform( -0.604855, -0.601956, 0.521343, -0.456562, 0.798529, 0.392302, -0.652455, -0.000739259, -0.757826, -16.8975, 5.92276, -8.19412 )
+script = ExtResource( 1 )
+
+[node name="56" type="Spatial" parent="." instance=ExtResource( 2 )]
+transform = Transform( -0.719631, -0.676983, 0.154347, -0.585314, 0.71103, 0.389668, -0.373543, 0.190077, -0.907929, -18.354, 3.99527, -3.90595 )
+script = ExtResource( 1 )
+
+[node name="61" type="Spatial" parent="." instance=ExtResource( 2 )]
+transform = Transform( -0.703975, -0.639394, -0.309178, -0.702283, 0.561779, 0.437265, -0.105895, 0.524956, -0.844517, -17.7702, 1.96041, 0.633378 )
+script = ExtResource( 1 )
+
+[node name="66" type="Spatial" parent="." instance=ExtResource( 2 )]
+transform = Transform( -0.508652, -0.291146, -0.81025, -0.85252, 0.301839, 0.426731, 0.120324, 0.907814, -0.40174, -14.7864, -0.226153, 3.81881 )
+script = ExtResource( 1 )
+
+[node name="71" type="Spatial" parent="." instance=ExtResource( 2 )]
+transform = Transform( 0.245848, 0.534234, -0.808797, -0.95853, 0.258064, -0.120904, 0.14413, 0.804982, 0.575525, -10.249, -0.217163, 2.77843 )
+script = ExtResource( 1 )
+
+[node name="76" type="Spatial" parent="." instance=ExtResource( 2 )]
+transform = Transform( 0.0538665, 0.926966, -0.371257, -0.911435, 0.197518, 0.360926, 0.407895, 0.318936, 0.855511, -7.12957, -0.636483, -1.04423 )
+script = ExtResource( 1 )
+
+[node name="81" type="Spatial" parent="." instance=ExtResource( 2 )]
+transform = Transform( 0.0678212, 0.994178, 0.0837224, -0.883714, 0.0209111, 0.467556, 0.463082, -0.105698, 0.87999, -6.79262, -2.59267, -5.55698 )
+script = ExtResource( 1 )
+
+[node name="86" type="Spatial" parent="." instance=ExtResource( 2 )]
+transform = Transform( 0.0700826, 0.990607, 0.117412, -0.881232, 0.00632497, 0.472638, 0.467454, -0.136592, 0.8734, -7.63066, -4.75671, -9.97972 )
+script = ExtResource( 1 )
+
+[node name="91" type="Spatial" parent="." instance=ExtResource( 2 )]
+transform = Transform( 0.0694459, 0.64478, -0.761207, -0.933594, 0.310893, 0.178168, 0.351532, 0.698287, 0.623553, -6.98895, -6.58263, -14.3272 )
+script = ExtResource( 1 )
+
+[node name="96" type="Spatial" parent="." instance=ExtResource( 2 )]
+transform = Transform( -0.102796, -0.238054, -0.965796, -0.944251, 0.32864, 0.0194983, 0.312757, 0.913961, -0.258567, -2.26626, -6.64825, -15.4414 )
+script = ExtResource( 1 )
+
+[node name="101" type="Spatial" parent="." instance=ExtResource( 2 )]
+transform = Transform( -0.201758, -0.800599, -0.56421, -0.953344, 0.292596, -0.0742747, 0.22455, 0.522903, -0.822283, 1.73951, -6.38753, -12.6346 )
+script = ExtResource( 1 )
+
+[node name="106" type="Spatial" parent="." instance=ExtResource( 2 )]
+transform = Transform( -0.156368, -0.929408, -0.334288, -0.943991, 0.240194, -0.226234, 0.290558, 0.28019, -0.914914, 4.13885, -5.50871, -8.31889 )
+script = ExtResource( 1 )
+
+[node name="111" type="Spatial" parent="." instance=ExtResource( 2 )]
+transform = Transform( -0.0582085, -0.972046, -0.227459, -0.830085, 0.173703, -0.529889, 0.554586, 0.157968, -0.816994, 5.73209, -3.56686, -3.9898 )
+script = ExtResource( 1 )
+
+[node name="116" type="Spatial" parent="." instance=ExtResource( 2 )]
+transform = Transform( 0.13045, -0.9821, -0.135871, -0.146546, 0.116437, -0.982327, 0.980563, 0.148056, -0.128734, 6.85237, 0.439786, -1.43762 )
+script = ExtResource( 1 )
+
+[node name="121" type="Spatial" parent="." instance=ExtResource( 2 )]
+transform = Transform( 0.170492, -0.984719, 0.0354912, 0.817327, 0.121209, -0.563278, 0.550368, 0.125042, 0.825504, 6.99593, 4.62808, -3.6208 )
+script = ExtResource( 1 )
+
+[node name="126" type="Spatial" parent="." instance=ExtResource( 2 )]
+transform = Transform( 0.250772, -0.96422, -0.0859765, 0.953984, 0.231071, 0.191094, -0.16439, -0.129942, 0.977799, 7.53683, 5.50196, -8.33316 )
+script = ExtResource( 1 )
+
+[node name="131" type="Spatial" parent="." instance=ExtResource( 2 )]
+transform = Transform( 0.47121, -0.634107, -0.613081, 0.532682, -0.349415, 0.770816, -0.702998, -0.689795, 0.173131, 9.19893, 2.52627, -11.5396 )
+script = ExtResource( 1 )
+
+[node name="136" type="Spatial" parent="." instance=ExtResource( 2 )]
+transform = Transform( 0.862378, -0.339371, -0.375669, -0.0305766, -0.775607, 0.630475, -0.505336, -0.532222, -0.679245, 11.6639, -1.11849, -9.81234 )
+script = ExtResource( 1 )
+
+[node name="141" type="Spatial" parent="." instance=ExtResource( 2 )]
+transform = Transform( 0.89188, -0.27911, -0.355867, -0.0889877, -0.879772, 0.466992, -0.443424, -0.384834, -0.809492, 13.2214, -3.60499, -5.7097 )
+script = ExtResource( 1 )
+
+[node name="146" type="Spatial" parent="." instance=ExtResource( 2 )]
+transform = Transform( 0.694657, -0.303588, -0.652136, 0.0760685, -0.870493, 0.486268, -0.715304, -0.387398, -0.581603, 15.4603, -5.75292, -1.85944 )
+script = ExtResource( 1 )

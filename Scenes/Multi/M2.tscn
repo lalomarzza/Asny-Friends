@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scenes/Fence/Fence.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/Mountain/Mountain.tscn" type="PackedScene" id=2]
+
+[node name="M2" type="Spatial"]
+
+[node name="Fence12" type="Spatial" parent="." instance=ExtResource( 1 )]
+transform = Transform( -0.238967, -0.432156, -0.609363, -0.102189, 0.652676, -0.422799, 0.740026, -0.0494235, -0.255158, -1.2879, 10.1903, 0.543375 )
+
+[node name="Fence11" type="Spatial" parent="." instance=ExtResource( 1 )]
+transform = Transform( -0.151156, -0.406285, -0.65366, 0.348836, 0.557626, -0.427262, 0.68604, -0.373058, 0.0732316, -1.01184, 9.50682, -2.51146 )
+
+[node name="Fence10" type="Spatial" parent="." instance=ExtResource( 1 )]
+transform = Transform( -0.105199, -0.355975, -0.690943, 0.646801, 0.346548, -0.277021, 0.431009, -0.606937, 0.247072, -0.100225, 7.45879, -4.63857 )
+
+[node name="Fence9" type="Spatial" parent="." instance=ExtResource( 1 )]
+transform = Transform( -0.303763, -0.296285, -0.659644, 0.577536, 0.331158, -0.414696, 0.435162, -0.646325, 0.0899123, 0.878492, 5.16791, -6.10829 )
+
+[node name="Fence8" type="Spatial" parent="." instance=ExtResource( 1 )]
+transform = Transform( 0.224469, -0.241673, -0.711614, -0.555792, 0.446518, -0.326961, 0.50586, 0.597832, -0.0434638, -0.932222, 8.96356, 2.92838 )
+
+[node name="Fence7" type="Spatial" parent="." instance=ExtResource( 1 )]
+transform = Transform( 0.240572, -0.225648, -0.711614, -0.58521, 0.407201, -0.32696, 0.46351, 0.631234, -0.0434638, 0.309765, 6.44305, 4.90621 )
+
+[node name="Fence13" type="Spatial" parent="." instance=ExtResource( 1 )]
+transform = Transform( 0.280572, -0.173411, -0.711614, -0.654388, 0.282949, -0.32696, 0.329002, 0.710672, -0.0434638, 1.41206, 3.85172, 6.35243 )
+
+[node name="Mountain" type="Spatial" parent="." instance=ExtResource( 2 )]

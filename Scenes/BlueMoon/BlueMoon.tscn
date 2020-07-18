@@ -1,0 +1,264 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://Models/BlueMoon.glb" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/BlueMoon/Obs.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/BlueMoon/BoatPapper.tscn" type="PackedScene" id=3]
+
+[sub_resource type="SpatialMaterial" id=1]
+flags_unshaded = true
+
+[sub_resource type="SphereMesh" id=2]
+material = SubResource( 1 )
+radius = 20.0
+height = 40.0
+
+[sub_resource type="PhysicsMaterial" id=3]
+friction = 0.5
+bounce = 4.0
+
+[sub_resource type="SphereShape" id=4]
+radius = 20.0657
+
+[sub_resource type="GDScript" id=5]
+script/source = "extends Spatial
+
+
+func _process(delta):
+	rotate_x(.05)
+"
+
+[sub_resource type="SphereShape" id=6]
+radius = 13.1234
+
+[sub_resource type="SphereShape" id=7]
+radius = 32.8567
+
+[node name="BlueMoon" instance=ExtResource( 1 )]
+
+[node name="MeshInstance" type="MeshInstance" parent="." index="0"]
+visible = false
+mesh = SubResource( 2 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="BlueMoon" index="0"]
+physics_material_override = SubResource( 3 )
+
+[node name="CollisionShape" type="CollisionShape" parent="BlueMoon/StaticBody" index="0"]
+shape = SubResource( 4 )
+
+[node name="BoatPapper" parent="BlueMoon/StaticBody/CollisionShape" index="0" instance=ExtResource( 3 )]
+script = SubResource( 5 )
+
+[node name="BoatPapper2" parent="BlueMoon/StaticBody/CollisionShape" index="1" instance=ExtResource( 3 )]
+transform = Transform( 0.311022, -0.932027, -0.185988, 0.799915, 0.362389, -0.478341, 0.513227, 2.98023e-08, 0.858253, 0, 0, 0 )
+script = SubResource( 5 )
+
+[node name="BoatPapper3" parent="BlueMoon/StaticBody/CollisionShape" index="2" instance=ExtResource( 3 )]
+transform = Transform( -0.0785623, 0.963578, -0.255625, -0.503973, -0.259627, -0.823774, -0.860139, 0.0641108, 0.506015, 0, 0, 0 )
+script = SubResource( 5 )
+
+[node name="AreaMoon" type="Spatial" parent="." index="2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 23.2746, 0 )
+
+[node name="AreaMoon" type="Area" parent="AreaMoon" index="0" groups=[
+"AreaPlayer",
+]]
+transform = Transform( -1, 3.6562e-07, -8.44821e-08, -3.74831e-07, -0.96255, 0.271104, 1.78029e-08, 0.271104, 0.96255, 5.4891e-07, -1.44555, -5.28596 )
+
+[node name="CollisionShape" type="CollisionShape" parent="AreaMoon/AreaMoon" index="0"]
+transform = Transform( 1, 0, 0, 0, 0.395475, 0, 0, 0, 1, 0, -3.489, 0 )
+shape = SubResource( 6 )
+
+[node name="Directions" type="Spatial" parent="." index="3"]
+
+[node name="Player" type="Spatial" parent="Directions" index="0"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 21.9614, 0 )
+
+[node name="Cam" type="Spatial" parent="Directions/Player" index="0"]
+transform = Transform( 0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, 0, 0, 0 )
+
+[node name="Spatial" type="Spatial" parent="Directions/Player/Cam" index="0"]
+
+[node name="L" type="Position3D" parent="Directions/Player/Cam/Spatial" index="0"]
+transform = Transform( 0.511442, -0.205477, 0.83439, 0.118281, 0.978582, 0.168485, -0.851138, 0.0125224, 0.524792, 4.01773, -2.17631, 2.54123 )
+
+[node name="C" type="Position3D" parent="Directions/Player/Cam/Spatial" index="1"]
+transform = Transform( 0.999998, 0, 0, 0, 0.998865, 0.0476469, 0, -0.0476469, 0.998864, 0, 2.21484, 9.88662 )
+
+[node name="R" type="Position3D" parent="Directions/Player/Cam/Spatial" index="2"]
+transform = Transform( 0.38388, 0.331384, -0.86187, -0.0617842, 0.94051, 0.334102, 0.921313, -0.0750051, 0.381517, -3.56816, -1.8106, 2.79339 )
+
+[node name="Right" type="Position3D" parent="Directions" index="1"]
+transform = Transform( 0.999848, 0, -0.0174524, 0, 1, 0, 0.0174524, 0, 0.999848, 0, 0, 0 )
+
+[node name="Left" type="Position3D" parent="Directions" index="2"]
+transform = Transform( 0.999848, 0, 0.0174524, 0, 1, 0, -0.0174524, 0, 0.999848, 0, 0, 0 )
+
+[node name="Right2" type="Position3D" parent="Directions" index="3"]
+transform = Transform( 0.99863, 0, -0.052336, 0, 1, 0, 0.052336, 0, 0.99863, 0, 0, 0 )
+
+[node name="Left2" type="Position3D" parent="Directions" index="4"]
+transform = Transform( 0.99863, 0, 0.052336, 0, 1, 0, -0.052336, 0, 0.99863, 0, 0, 0 )
+
+[node name="Center" type="Position3D" parent="Directions" index="5"]
+transform = Transform( 1, 0, 0, 0, 0.99863, 0.052336, 0, -0.052336, 0.99863, 0, 0, 0 )
+
+[node name="Directions2" type="Spatial" parent="." index="4"]
+
+[node name="Player" type="Spatial" parent="Directions2" index="0"]
+transform = Transform( -1, 3.25841e-07, 0, -3.25841e-07, -1, 0, 0, 0, 1, -1.34294e-06, 19.1215, 0 )
+
+[node name="Cam" type="Spatial" parent="Directions2/Player" index="0"]
+transform = Transform( 0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, 0, 0, 0 )
+
+[node name="Spatial" type="Spatial" parent="Directions2/Player/Cam" index="0"]
+transform = Transform( 1, 0, 0, 2.84217e-14, 1, 0, 0, 0, 1, 0, -0.327806, 0 )
+
+[node name="L" type="Position3D" parent="Directions2/Player/Cam/Spatial" index="0"]
+transform = Transform( 0.511442, -0.205477, 0.83439, 0.118281, 0.978582, 0.168485, -0.851138, 0.0125224, 0.524792, 2.57568, 0.111979, 1.63425 )
+
+[node name="C" type="Position3D" parent="Directions2/Player/Cam/Spatial" index="1"]
+transform = Transform( 0.999995, -3.55271e-13, -3.41061e-13, 5.68434e-13, 0.721192, 0.692733, 5.42098e-20, -0.692734, 0.72119, 9.09495e-13, 1.01416, 6.08865 )
+
+[node name="R" type="Position3D" parent="Directions2/Player/Cam/Spatial" index="2"]
+transform = Transform( 0.38388, 0.331384, -0.86187, -0.0617842, 0.94051, 0.334102, 0.921313, -0.0750051, 0.381517, -2.48248, 0.348015, 2.3128 )
+
+[node name="Right" type="Position3D" parent="Directions2" index="1"]
+transform = Transform( 0.999848, 0, 0.0174524, 0, 1, 0, -0.0174524, 0, 0.999848, 0, 0, 0 )
+
+[node name="Left" type="Position3D" parent="Directions2" index="2"]
+transform = Transform( 0.999848, 0, -0.0174524, 0, 1, 0, 0.0174524, 0, 0.999848, 0, 0, 0 )
+
+[node name="Right2" type="Position3D" parent="Directions2" index="3"]
+transform = Transform( 0.99863, 0, 0.052336, 0, 1, 0, -0.052336, 0, 0.99863, 0, 0, 0 )
+
+[node name="Left2" type="Position3D" parent="Directions2" index="4"]
+transform = Transform( 0.99863, 0, -0.052336, 0, 1, 0, 0.052336, 0, 0.99863, 0, 0, 0 )
+
+[node name="Center" type="Position3D" parent="Directions2" index="5"]
+transform = Transform( 1, 0, 0, 0, 0.99863, 0.052336, 0, -0.052336, 0.99863, 0, 0, 0 )
+
+[node name="Area" type="Area" parent="." index="5"]
+space_override = 3
+gravity_point = true
+gravity_vec = Vector3( 0, 0, 0 )
+gravity = 1.0
+
+[node name="CollisionShape" type="CollisionShape" parent="Area" index="0"]
+shape = SubResource( 7 )
+
+[node name="Obs" type="Spatial" parent="." index="6"]
+
+[node name="Obs" parent="Obs" index="0" instance=ExtResource( 2 )]
+transform = Transform( 0.197594, 0.0244063, -0.97998, 0.110738, 0.992735, 0.0470522, 0.974009, -0.117819, 0.193456, 0, 0, 0 )
+
+[node name="Obs16" parent="Obs" index="1" instance=ExtResource( 2 )]
+transform = Transform( 0.0185851, 0.383118, 0.923513, 0.153903, 0.911567, -0.381259, -0.987911, 0.149217, -0.0420216, 0, 0, 0 )
+
+[node name="Obs18" parent="Obs" index="2" instance=ExtResource( 2 )]
+transform = Transform( 0.733652, -0.526706, 0.429342, 0.437663, 0.849584, 0.294377, -0.519812, -0.0280631, 0.85382, 0, 0, 0 )
+
+[node name="Obs22" parent="Obs" index="3" instance=ExtResource( 2 )]
+transform = Transform( -0.113021, 0.993457, -0.0164191, 0.934829, 0.11192, 0.337, 0.336633, 0.022739, -0.941361, 0, 0, 0 )
+
+[node name="Obs21" parent="Obs" index="4" instance=ExtResource( 2 )]
+transform = Transform( 0.842509, 0.346328, -0.412596, -0.523003, 0.342445, -0.780512, -0.129021, 0.873377, 0.469643, 0, 0, 0 )
+
+[node name="Obs20" parent="Obs" index="5" instance=ExtResource( 2 )]
+transform = Transform( 0.650002, 0.643139, -0.404809, -0.419174, 0.747758, 0.51493, 0.63387, -0.16502, 0.755631, 0, 0, 0 )
+
+[node name="Obs3" parent="Obs" index="6" instance=ExtResource( 2 )]
+transform = Transform( 0.343218, -0.058923, -0.937406, 0.718183, 0.659664, 0.221488, 0.605322, -0.749247, 0.268726, 0, 0, 0 )
+
+[node name="Obs4" parent="Obs" index="7" instance=ExtResource( 2 )]
+transform = Transform( -0.31488, -0.253645, 0.914612, -0.934874, 0.249278, -0.252725, -0.16389, -0.934625, -0.315619, 0, 0, 0 )
+
+[node name="Obs5" parent="Obs" index="8" instance=ExtResource( 2 )]
+transform = Transform( 0.115706, -0.744279, 0.657769, -0.679655, 0.423595, 0.598862, -0.724348, -0.516348, -0.456841, 0, 0, 0 )
+
+[node name="Obs7" parent="Obs" index="9" instance=ExtResource( 2 )]
+transform = Transform( 0.452767, 0.695809, -0.55754, 0.357755, 0.430993, 0.828405, 0.816708, -0.574538, -0.0537899, 0, 0, 0 )
+
+[node name="Obs8" parent="Obs" index="10" instance=ExtResource( 2 )]
+transform = Transform( 0.00589286, -0.954739, 0.297385, 0.060162, 0.29719, 0.952921, -0.998171, 0.0122758, 0.0591903, 0, 0, 0 )
+
+[node name="Obs9" parent="Obs" index="11" instance=ExtResource( 2 )]
+transform = Transform( 0.216044, -0.622694, 0.752048, 0.721754, 0.620585, 0.306502, -0.657567, 0.476576, 0.583506, 0, 0, 0 )
+
+[node name="Obs23" parent="Obs" index="12" instance=ExtResource( 2 )]
+transform = Transform( -0.140846, -0.724213, 0.675038, 0.910135, 0.173627, 0.376174, -0.389635, 0.667359, 0.634678, 0, 0, 0 )
+
+[node name="Obs24" parent="Obs" index="13" instance=ExtResource( 2 )]
+transform = Transform( -0.551183, -0.140692, 0.822437, 0.67545, 0.503451, 0.538799, -0.489861, 0.852492, -0.182463, 0, 0, 0 )
+
+[node name="Obs10" parent="Obs" index="14" instance=ExtResource( 2 )]
+transform = Transform( 0.174016, 0.792588, -0.584399, -0.978582, 0.205463, -0.0127339, 0.109979, 0.574098, 0.811366, 0, 0, 0 )
+
+[node name="Obs11" parent="Obs" index="15" instance=ExtResource( 2 )]
+transform = Transform( -0.419121, 0.289642, 0.860491, -0.873404, 0.130248, -0.469253, -0.247992, -0.948231, 0.198385, 0, 0, 0 )
+
+[node name="Obs13" parent="Obs" index="16" instance=ExtResource( 2 )]
+transform = Transform( -0.997324, 0.0136603, 0.0718047, 0.0463307, 0.877963, 0.476481, -0.056533, 0.478533, -0.876247, 0, 0, 0 )
+
+[node name="Obs14" parent="Obs" index="17" instance=ExtResource( 2 )]
+transform = Transform( -0.649435, 0.682595, 0.335108, 0.759897, 0.598859, 0.25283, -0.0281017, 0.418844, -0.907623, 0, 0, 0 )
+
+[node name="Obs49" parent="Obs" index="18" instance=ExtResource( 2 )]
+transform = Transform( 0.184006, 0.105927, 0.977201, 0.59367, -0.804333, -0.0245988, 0.783388, 0.584661, -0.210888, 0, 0, 0 )
+
+[node name="Obs46" parent="Obs" index="19" instance=ExtResource( 2 )]
+transform = Transform( 0.884801, -0.444503, 0.139801, -0.295123, -0.766752, -0.570083, 0.360596, 0.463151, -0.809606, 0, 0, 0 )
+
+[node name="Obs45" parent="Obs" index="20" instance=ExtResource( 2 )]
+transform = Transform( 0.660766, -0.577722, 0.479193, -0.678993, -0.73219, 0.0535353, 0.319932, -0.360743, -0.876075, 0, 0, 0 )
+
+[node name="Obs44" parent="Obs" index="21" instance=ExtResource( 2 )]
+transform = Transform( -0.147339, 0.902788, 0.40406, -0.977075, -0.06938, -0.201272, -0.153673, -0.424453, 0.892314, 0, 0, 0 )
+
+[node name="Obs43" parent="Obs" index="22" instance=ExtResource( 2 )]
+transform = Transform( 0.874794, 0.07722, -0.478301, 0.348099, -0.786832, 0.50963, -0.336989, -0.612317, -0.715197, 0, 0, 0 )
+
+[node name="Obs42" parent="Obs" index="23" instance=ExtResource( 2 )]
+transform = Transform( 0.59978, 0.720628, -0.347792, 0.627128, -0.693303, -0.355023, -0.496964, -0.00517413, -0.867756, 0, 0, 0 )
+
+[node name="Obs40" parent="Obs" index="24" instance=ExtResource( 2 )]
+transform = Transform( -0.232692, -0.07359, 0.969762, 0.97145, -0.0650156, 0.228163, 0.0462592, 0.995167, 0.0866176, 0, 0, 0 )
+
+[node name="Obs39" parent="Obs" index="25" instance=ExtResource( 2 )]
+transform = Transform( 0.849829, -0.405939, 0.336162, 0.195239, -0.349972, -0.916188, 0.489563, 0.844235, -0.218161, 0, 0, 0 )
+
+[node name="Obs38" parent="Obs" index="26" instance=ExtResource( 2 )]
+transform = Transform( 0.3733, 0.401368, 0.836392, 0.920497, -0.272456, -0.280092, 0.11546, 0.874455, -0.471166, 0, 0, 0 )
+
+[node name="Obs37" parent="Obs" index="27" instance=ExtResource( 2 )]
+transform = Transform( 0.118332, 0.94563, -0.302954, -0.472249, -0.21479, -0.854895, -0.873486, 0.244231, 0.421157, 0, 0, 0 )
+
+[node name="Obs36" parent="Obs" index="28" instance=ExtResource( 2 )]
+transform = Transform( 0.234627, -0.942183, 0.23925, 0.118849, -0.21647, -0.969028, 0.964792, 0.255795, 0.061188, 0, 0, 0 )
+
+[node name="Obs35" parent="Obs" index="29" instance=ExtResource( 2 )]
+transform = Transform( 0.518429, -0.697331, 0.494934, -0.448643, -0.714538, -0.536799, 0.727976, 0.0562439, -0.683291, 0, 0, 0 )
+
+[node name="Obs34" parent="Obs" index="30" instance=ExtResource( 2 )]
+transform = Transform( -0.425984, -0.881511, -0.203654, 0.782313, -0.245824, -0.572325, 0.454448, -0.403122, 0.794335, 0, 0, 0 )
+
+[node name="Obs33" parent="Obs" index="31" instance=ExtResource( 2 )]
+transform = Transform( 0.830761, -0.545919, -0.108664, -0.0797433, -0.30993, 0.947409, -0.550887, -0.778406, -0.301011, 0, 0, 0 )
+
+[node name="Obs32" parent="Obs" index="32" instance=ExtResource( 2 )]
+transform = Transform( -0.655202, 0.0507268, -0.753748, 0.708835, -0.303784, -0.636605, -0.26127, -0.951389, 0.163083, 0, 0, 0 )
+
+[node name="Obs31" parent="Obs" index="33" instance=ExtResource( 2 )]
+transform = Transform( 0.180778, 0.629701, -0.75551, 0.925879, -0.368077, -0.0852406, -0.331762, -0.684101, -0.649568, 0, 0, 0 )
+
+[node name="Obs30" parent="Obs" index="34" instance=ExtResource( 2 )]
+transform = Transform( 0.617777, 0.75195, 0.230048, 0.71721, -0.418851, -0.556932, -0.322429, 0.509053, -0.798063, 0, 0, 0 )
+
+[node name="Obs28" parent="Obs" index="35" instance=ExtResource( 2 )]
+transform = Transform( -0.934434, -0.222705, 0.277911, 0.162705, -0.961115, -0.22312, 0.316795, -0.163274, 0.934335, 0, 0, 0 )
+
+[node name="Obs27" parent="Obs" index="36" instance=ExtResource( 2 )]
+transform = Transform( -0.653593, 0.543825, 0.526373, -0.687651, -0.717215, -0.112857, 0.316148, -0.435724, 0.84273, 0, 0, 0 )
+
+[node name="Obs26" parent="Obs" index="37" instance=ExtResource( 2 )]
+transform = Transform( -0.75449, 0.260832, 0.602253, -0.16465, -0.963514, 0.211021, 0.635321, 0.0600526, 0.769909, 0, 0, 0 )

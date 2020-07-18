@@ -1,0 +1,29 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="CubeMesh" id=1]
+
+[node name="Directions" type="Spatial"]
+
+[node name="Player" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 53.5, 0 )
+
+[node name="MeshInstance" type="MeshInstance" parent="Player"]
+transform = Transform( 0.492554, 0, 0, 0, 0.492554, 0, 0, 0, 0.492554, 0, -1.40656, 0 )
+visible = false
+mesh = SubResource( 1 )
+material/0 = null
+
+[node name="Left" type="Position3D" parent="."]
+transform = Transform( 0.999848, 0, 0.0174551, 0, 1, 0, -0.0174551, 0, 0.999848, 0, 0, 0 )
+
+[node name="Right" type="Position3D" parent="."]
+transform = Transform( 0.999848, 0, -0.0174551, 0, 1, 0, 0.0174551, 0, 0.999848, 0, 0, 0 )
+
+[node name="Left2" type="Position3D" parent="."]
+transform = Transform( 0.998629, 0, 0.052344, 0, 1, 0, -0.0523439, 0, 0.99863, 0, 0, 0 )
+
+[node name="Right2" type="Position3D" parent="."]
+transform = Transform( 0.998629, 0, -0.052344, 0, 1, 0, 0.0523439, 0, 0.99863, 0, 0, 0 )
+
+[node name="Center" type="Position3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 0.999848, 0.0174524, 0, -0.0174524, 0.999848, 0, 0, 0 )

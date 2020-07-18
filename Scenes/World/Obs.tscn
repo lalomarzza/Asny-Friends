@@ -1,0 +1,144 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Scenes/Obs.tscn" type="PackedScene" id=1]
+
+[node name="Obs" type="Spatial"]
+transform = Transform( 1, 0, 0, 0, 0.969295, -0.2459, 0, 0.2459, 0.969295, 0, 0, 0 )
+
+[node name="Obs4" parent="." instance=ExtResource( 1 )]
+transform = Transform( 0.613941, -0.707432, -0.350166, 0.374641, 0.651611, -0.65958, 0.69478, 0.273757, 0.665084, 0, 0, 0 )
+
+[node name="Obs" parent="." instance=ExtResource( 1 )]
+transform = Transform( 0.94852, 0.0960229, 0.301809, -0.0527693, 0.987527, -0.148347, -0.312289, 0.124784, 0.941756, 0, 0, 0 )
+
+[node name="Obs2" parent="." instance=ExtResource( 1 )]
+transform = Transform( 0.885523, -0.462372, 0.045393, 0.464595, 0.881286, -0.0865196, -7.45058e-09, 0.0977045, 0.995216, 0, 0, 0 )
+
+[node name="Obs3" parent="." instance=ExtResource( 1 )]
+transform = Transform( 0.148042, -0.809676, -0.567898, 0.560328, 0.541838, -0.626453, 0.814933, -0.225468, 0.533899, 0, 0, 0 )
+
+[node name="Obs6" parent="." instance=ExtResource( 1 )]
+transform = Transform( -0.0909844, 0.330719, 0.939334, -0.412899, 0.845821, -0.337789, -0.906221, -0.418583, 0.0595969, 0, 0, 0 )
+
+[node name="Obs5" parent="." instance=ExtResource( 1 )]
+transform = Transform( 0.846736, -0.268527, 0.459272, 0.0121592, 0.872815, 0.4879, -0.531873, -0.407538, 0.742309, 0, 0, 0 )
+
+[node name="Obs12" parent="." instance=ExtResource( 1 )]
+transform = Transform( 0.997728, -0.0672431, 0.00414928, 0.0365537, 0.592048, 0.805073, -0.0565922, -0.803092, 0.593161, 0, 0, 0 )
+
+[node name="Obs23" parent="." instance=ExtResource( 1 )]
+transform = Transform( 0.367417, 0.797659, -0.478273, -0.822113, 0.519001, 0.234025, 0.434897, 0.30721, 0.846456, 0, 0, 0 )
+
+[node name="Obs22" parent="." instance=ExtResource( 1 )]
+transform = Transform( 0.721976, 0.606833, -0.332422, -0.508782, 0.791202, 0.339324, 0.468925, -0.0758533, 0.879975, 0, 0, 0 )
+
+[node name="Obs21" parent="." instance=ExtResource( 1 )]
+transform = Transform( -0.0383367, 0.958081, -0.283922, -0.948536, 0.0544889, 0.311947, 0.314341, 0.281269, 0.906685, 0, 0, 0 )
+
+[node name="Obs20" parent="." instance=ExtResource( 1 )]
+transform = Transform( 0.173663, 0.933008, -0.315178, 0.0261966, 0.315551, 0.948547, 0.984457, -0.172984, 0.030358, 0, 0, 0 )
+
+[node name="Obs16" parent="." instance=ExtResource( 1 )]
+transform = Transform( 0.463636, 0.51882, 0.718239, -0.860933, 0.455351, 0.226825, -0.209369, -0.72352, 0.657787, 0, 0, 0 )
+
+[node name="Obs14" parent="." instance=ExtResource( 1 )]
+transform = Transform( 0.201556, 0.824375, 0.528943, -0.971255, 0.0983924, 0.216753, 0.126642, -0.557426, 0.820511, 0, 0, 0 )
+
+[node name="Obs43" parent="." instance=ExtResource( 1 )]
+transform = Transform( 0.242541, -0.966899, 0.079245, 0.937911, 0.21282, -0.273918, 0.247986, 0.140761, 0.958483, 0, 0, 0 )
+
+[node name="Obs42" parent="." instance=ExtResource( 1 )]
+transform = Transform( 0.790836, -0.41803, -0.447022, 0.0230402, 0.750212, -0.660796, 0.611593, 0.512282, 0.602927, 0, 0, 0 )
+
+[node name="Obs32" parent="." instance=ExtResource( 1 )]
+transform = Transform( 0.790593, 0.579605, -0.197538, -0.432824, 0.300745, -0.849833, -0.433158, 0.757371, 0.488634, 0, 0, 0 )
+
+[node name="Obs31" parent="." instance=ExtResource( 1 )]
+transform = Transform( 0.327277, 0.209328, -0.92145, -0.941312, 0.157456, -0.298562, 0.0825907, 0.965085, 0.248575, 0, 0, 0 )
+
+[node name="Obs28" parent="." instance=ExtResource( 1 )]
+transform = Transform( 0.998776, -0.00549904, 0.0491566, 0.0414874, 0.63427, -0.771999, -0.0269332, 0.773093, 0.633721, 0, 0, 0 )
+
+[node name="Obs25" parent="." instance=ExtResource( 1 )]
+transform = Transform( 0.921946, 0.381075, -0.0692613, -0.365659, 0.797397, -0.480053, -0.127708, 0.467909, 0.8745, 0, 0, 0 )
+
+[node name="Obs92" parent="." instance=ExtResource( 1 )]
+transform = Transform( -0.928315, 0.321196, -0.187253, -0.280572, -0.93567, -0.214012, -0.243947, -0.146132, 0.958715, 0, 0, 0 )
+
+[node name="Obs91" parent="." instance=ExtResource( 1 )]
+transform = Transform( -0.868095, 0.384325, 0.314173, -0.496119, -0.650549, -0.575023, -0.0166105, -0.655042, 0.75541, 0, 0, 0 )
+
+[node name="Obs88" parent="." instance=ExtResource( 1 )]
+transform = Transform( 0.18426, 0.729234, 0.658989, -0.705217, -0.36893, 0.605441, 0.684629, -0.576289, 0.446289, 0, 0, 0 )
+
+[node name="Obs87" parent="." instance=ExtResource( 1 )]
+transform = Transform( -0.626561, -0.0432739, 0.77817, -0.709347, -0.381974, -0.592387, 0.322876, -0.923159, 0.208634, 0, 0, 0 )
+
+[node name="Obs86" parent="." instance=ExtResource( 1 )]
+transform = Transform( -0.54403, 0.402563, -0.736189, 0.769385, -0.110736, -0.629114, -0.334781, -0.908669, -0.249482, 0, 0, 0 )
+
+[node name="Obs84" parent="." instance=ExtResource( 1 )]
+transform = Transform( -0.296837, -0.909453, -0.291175, -0.352016, -0.179233, 0.918673, -0.887679, 0.375194, -0.266939, 0, 0, 0 )
+
+[node name="Obs82" parent="." instance=ExtResource( 1 )]
+transform = Transform( -0.629422, -0.552419, -0.546498, 0.541713, -0.816156, 0.201087, -0.557112, -0.169477, 0.81296, 0, 0, 0 )
+
+[node name="Obs81" parent="." instance=ExtResource( 1 )]
+transform = Transform( -0.345744, -0.924733, 0.15915, 0.466597, -0.316589, -0.825869, 0.814094, -0.21128, 0.540936, 0, 0, 0 )
+
+[node name="Obs80" parent="." instance=ExtResource( 1 )]
+transform = Transform( -0.427429, -0.889222, -0.163061, 0.199164, 0.0833168, -0.976418, 0.881837, -0.449826, 0.141489, 0, 0, 0 )
+
+[node name="Obs78" parent="." instance=ExtResource( 1 )]
+transform = Transform( 0.0743003, -0.569311, -0.818758, 0.814807, 0.508017, -0.2793, 0.574951, -0.646378, 0.501624, 0, 0, 0 )
+
+[node name="Obs76" parent="." instance=ExtResource( 1 )]
+transform = Transform( -0.628223, -0.60723, -0.486422, 0.777206, -0.518603, -0.356373, -0.0358593, -0.601932, 0.797741, 0, 0, 0 )
+
+[node name="Obs74" parent="." instance=ExtResource( 1 )]
+transform = Transform( 0.555858, -0.620889, -0.552738, 0.709282, 0.00747904, 0.704885, -0.433521, -0.783863, 0.444542, 0, 0, 0 )
+
+[node name="Obs73" parent="." instance=ExtResource( 1 )]
+transform = Transform( -0.241383, -0.123741, -0.962508, 0.958818, 0.122566, -0.256215, 0.149676, -0.984716, 0.0890599, 0, 0, 0 )
+
+[node name="Obs72" parent="." instance=ExtResource( 1 )]
+transform = Transform( 0.103031, 0.670166, 0.735025, 0.986298, -0.16455, 0.0117767, 0.128841, 0.723741, -0.677937, 0, 0, 0 )
+
+[node name="Obs71" parent="." instance=ExtResource( 1 )]
+transform = Transform( -0.562904, 0.737569, 0.373001, -0.037893, -0.473845, 0.879792, 0.825653, 0.481105, 0.294678, 0, 0, 0 )
+
+[node name="Obs69" parent="." instance=ExtResource( 1 )]
+transform = Transform( -0.883448, 0.383523, 0.269129, 0.0603277, -0.476517, 0.877093, 0.46463, 0.791102, 0.397841, 0, 0, 0 )
+
+[node name="Obs7" parent="." instance=ExtResource( 1 )]
+transform = Transform( -0.807374, 0.280856, 0.51891, 0.0495648, -0.844057, 0.533958, 0.587955, 0.456824, 0.667549, 0, 0, 0 )
+
+[node name="Obs65" parent="." instance=ExtResource( 1 )]
+transform = Transform( -0.606385, 0.64802, 0.460834, -0.371499, -0.743276, 0.556353, 0.703055, 0.166165, 0.69145, 0, 0, 0 )
+
+[node name="Obs64" parent="." instance=ExtResource( 1 )]
+transform = Transform( -0.276087, 0.940592, -0.197642, -0.775016, -0.339485, -0.533011, -0.568442, 0.00601837, 0.822701, 0, 0, 0 )
+
+[node name="Obs63" parent="." instance=ExtResource( 1 )]
+transform = Transform( -0.859748, -0.17294, -0.480547, 0.107689, -0.981155, 0.160433, -0.499237, 0.0861823, 0.862169, 0, 0, 0 )
+
+[node name="Obs62" parent="." instance=ExtResource( 1 )]
+transform = Transform( -0.971489, -0.113905, 0.207931, -0.0248306, -0.823322, -0.567031, 0.235782, -0.556027, 0.79702, 0, 0, 0 )
+
+[node name="Obs59" parent="." instance=ExtResource( 1 )]
+transform = Transform( -0.765253, -0.267566, -0.585488, -0.626671, 0.101659, 0.772624, -0.147208, 0.958161, -0.245471, 0, 0, 0 )
+
+[node name="Obs56" parent="." instance=ExtResource( 1 )]
+transform = Transform( -0.350057, -0.715479, 0.604607, 0.742817, 0.1812, 0.644507, -0.570686, 0.674726, 0.46804, 0, 0, 0 )
+
+[node name="Obs55" parent="." instance=ExtResource( 1 )]
+transform = Transform( -0.956773, -0.0494265, 0.286605, 0.277985, -0.445107, 0.851237, 0.0854963, 0.894112, 0.439606, 0, 0, 0 )
+
+[node name="Obs53" parent="." instance=ExtResource( 1 )]
+transform = Transform( -0.621786, -0.624854, -0.472165, -0.309211, -0.358041, 0.881019, -0.719563, 0.693804, 0.0294125, 0, 0, 0 )
+
+[node name="Obs52" parent="." instance=ExtResource( 1 )]
+transform = Transform( 0.608345, -0.290126, 0.738744, 0.27055, -0.799237, -0.536678, 0.746135, 0.526353, -0.407718, 0, 0, 0 )
+
+[node name="Obs49" parent="." instance=ExtResource( 1 )]
+transform = Transform( -0.138765, -0.712174, 0.688152, 0.371512, -0.681562, -0.630438, 0.917999, 0.168174, 0.359158, 0, 0, 0 )

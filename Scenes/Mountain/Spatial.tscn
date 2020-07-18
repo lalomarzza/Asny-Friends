@@ -1,0 +1,31 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="SphereShape" id=1]
+radius = 7.08451
+
+[node name="Spatial" type="Spatial"]
+
+[node name="Left0" type="Position3D" parent="."]
+transform = Transform( 0.999391, -0.0348995, 0, 0.0348995, 0.999391, 0, 0, 0, 1, 0, 0, 0 )
+
+[node name="Right0" type="Position3D" parent="."]
+transform = Transform( 0.999391, 0.0348995, 0, -0.0348995, 0.999391, 0, 0, 0, 1, 0, 0, 0 )
+
+[node name="Left20" type="Position3D" parent="."]
+transform = Transform( 0.996195, -0.0871558, 0, 0.0871558, 0.996195, 0, 0, 0, 1, 0, 0, 0 )
+
+[node name="Right20" type="Position3D" parent="."]
+transform = Transform( 0.996195, 0.0871558, 0, -0.0871558, 0.996195, 0, 0, 0, 1, 0, 0, 0 )
+
+[node name="Center0" type="Position3D" parent="."]
+
+[node name="Player" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.29134, 0 )
+
+[node name="Area" type="Area" parent="."]
+space_override = 3
+gravity_point = true
+gravity_vec = Vector3( 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Area"]
+shape = SubResource( 1 )

@@ -1,0 +1,6536 @@
+[gd_scene load_steps=75 format=2]
+
+[ext_resource path="res://Scripts/Button.gd" type="Script" id=1]
+[ext_resource path="res://Scenes/Status.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Images/IconPress.png" type="Texture" id=3]
+[ext_resource path="res://Images/Asny!Calca.png" type="Texture" id=4]
+[ext_resource path="res://Images/Texture4.jpg" type="Texture" id=5]
+[ext_resource path="res://Images/Icon.png" type="Texture" id=6]
+[ext_resource path="res://Images/Smook.png" type="Texture" id=7]
+[ext_resource path="res://Images/white.png" type="Texture" id=8]
+[ext_resource path="res://Images/Buble.png" type="Texture" id=9]
+[ext_resource path="res://Images/BublePressed.png" type="Texture" id=10]
+[ext_resource path="res://Sound/Music/Asny1.ogg" type="AudioStream" id=11]
+[ext_resource path="res://Images/particleI.png" type="Texture" id=12]
+[ext_resource path="res://Images/particle.png" type="Texture" id=13]
+[ext_resource path="res://Resources/Jellee-Roman.ttf" type="DynamicFontData" id=14]
+[ext_resource path="res://Sound/332629__treasuresounds__item-pickup.ogg" type="AudioStream" id=15]
+[ext_resource path="res://Sound/439184__javapimp__pop-1 (1).ogg" type="AudioStream" id=16]
+[ext_resource path="res://Images/BootSplash.png" type="Texture" id=17]
+[ext_resource path="res://Sound/Music/Asny2.ogg" type="AudioStream" id=18]
+
+[sub_resource type="AtlasTexture" id=1]
+flags = 23
+atlas = ExtResource( 5 )
+region = Rect2( 337.757, 344.569, 337.698, 559.079 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 23.421, 991.886 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 562.814, 36.605 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 236.017, 228.629 )
+
+[sub_resource type="CapsuleShape2D" id=5]
+radius = 84.8234
+height = 2.39362
+
+[sub_resource type="CapsuleShape2D" id=6]
+radius = 121.915
+height = 282.226
+
+[sub_resource type="ViewportTexture" id=7]
+viewport_path = NodePath("Node2D/StoreR1/Store2")
+
+[sub_resource type="PhysicsMaterial" id=8]
+friction = 0.5
+bounce = 2.5
+
+[sub_resource type="ViewportTexture" id=9]
+viewport_path = NodePath("Node2D/StoreR1/Store")
+
+[sub_resource type="AtlasTexture" id=10]
+flags = 4
+atlas = ExtResource( 6 )
+region = Rect2( -0.470947, 139.036, 130.748, 137.396 )
+
+[sub_resource type="AtlasTexture" id=11]
+flags = 4
+atlas = ExtResource( 6 )
+region = Rect2( -0.470947, 139.036, 130.748, 137.396 )
+
+[sub_resource type="AtlasTexture" id=12]
+flags = 4
+atlas = ExtResource( 6 )
+region = Rect2( 131, 137, 124, 137 )
+
+[sub_resource type="AtlasTexture" id=13]
+flags = 4
+atlas = ExtResource( 6 )
+region = Rect2( 254, 138, 125, 112 )
+
+[sub_resource type="AtlasTexture" id=14]
+flags = 4
+atlas = ExtResource( 6 )
+region = Rect2( 254, 138, 125, 112 )
+
+[sub_resource type="AtlasTexture" id=15]
+flags = 4
+atlas = ExtResource( 6 )
+region = Rect2( 2.33081, 289.682, 211.303, 108.528 )
+
+[sub_resource type="AtlasTexture" id=16]
+flags = 4
+atlas = ExtResource( 6 )
+region = Rect2( -0.470947, 139.036, 130.748, 137.396 )
+
+[sub_resource type="AtlasTexture" id=17]
+flags = 4
+atlas = ExtResource( 6 )
+region = Rect2( 5.72874, 0.797972, 113.729, 132.962 )
+
+[sub_resource type="AtlasTexture" id=18]
+flags = 4
+atlas = ExtResource( 3 )
+region = Rect2( -5.54999, -3.6, 132.05, 135.85 )
+
+[sub_resource type="AtlasTexture" id=19]
+flags = 4
+atlas = ExtResource( 6 )
+region = Rect2( 117.3, -0.649998, 143.45, 140.324 )
+
+[sub_resource type="AtlasTexture" id=20]
+flags = 4
+atlas = ExtResource( 3 )
+region = Rect2( 117.3, -0.649998, 143.45, 140.324 )
+
+[sub_resource type="AtlasTexture" id=21]
+flags = 4
+atlas = ExtResource( 6 )
+region = Rect2( 381.714, 136.439, 130.631, 120.134 )
+
+[sub_resource type="AtlasTexture" id=22]
+flags = 4
+atlas = ExtResource( 3 )
+region = Rect2( 393, 133, 119, 123 )
+
+[sub_resource type="AtlasTexture" id=23]
+flags = 4
+atlas = ExtResource( 3 )
+region = Rect2( 133, 142, 126, 132 )
+
+[sub_resource type="AtlasTexture" id=24]
+flags = 4
+atlas = ExtResource( 3 )
+region = Rect2( 13.6914, 290.508, 195.398, 120.42 )
+
+[sub_resource type="AtlasTexture" id=25]
+flags = 4
+atlas = ExtResource( 3 )
+region = Rect2( -2, 140, 135, 135 )
+
+[sub_resource type="AtlasTexture" id=26]
+flags = 4
+atlas = ExtResource( 3 )
+region = Rect2( 217, 257, 111, 103 )
+
+[sub_resource type="AtlasTexture" id=27]
+flags = 4
+atlas = ExtResource( 6 )
+region = Rect2( 221.634, 259.65, 107.479, 104.155 )
+
+[sub_resource type="AtlasTexture" id=28]
+flags = 4
+atlas = ExtResource( 3 )
+region = Rect2( 327.962, 258.997, 112.038, 109.003 )
+
+[sub_resource type="AtlasTexture" id=29]
+flags = 4
+atlas = ExtResource( 6 )
+region = Rect2( 331, 258, 108, 106 )
+
+[sub_resource type="AtlasTexture" id=30]
+flags = 4
+atlas = ExtResource( 3 )
+region = Rect2( 329, 365.407, 111, 106.593 )
+
+[sub_resource type="AtlasTexture" id=31]
+flags = 4
+atlas = ExtResource( 6 )
+region = Rect2( 334.637, 363.869, 103.363, 103.131 )
+
+[sub_resource type="AtlasTexture" id=32]
+flags = 4
+atlas = ExtResource( 3 )
+region = Rect2( 212.662, 358.366, 117.338, 108.634 )
+
+[sub_resource type="AtlasTexture" id=33]
+flags = 4
+atlas = ExtResource( 6 )
+region = Rect2( 214.682, 362.594, 110.138, 96.9687 )
+
+[sub_resource type="AtlasTexture" id=34]
+flags = 4
+atlas = ExtResource( 6 )
+region = Rect2( 26.8699, 398.211, 150.459, 108.277 )
+
+[sub_resource type="AtlasTexture" id=35]
+flags = 4
+atlas = ExtResource( 3 )
+region = Rect2( 26.8699, 398.211, 150.459, 108.277 )
+
+[sub_resource type="AtlasTexture" id=36]
+flags = 4
+atlas = ExtResource( 3 )
+region = Rect2( 256.224, 1.22824, 113.206, 58.8809 )
+
+[sub_resource type="AtlasTexture" id=37]
+flags = 4
+atlas = ExtResource( 6 )
+region = Rect2( 256.224, 1.22824, 113.206, 58.8809 )
+
+[sub_resource type="AtlasTexture" id=38]
+flags = 4
+atlas = ExtResource( 3 )
+region = Rect2( 284.579, 53.2105, 83.5125, 87.3684 )
+
+[sub_resource type="AtlasTexture" id=39]
+flags = 4
+atlas = ExtResource( 6 )
+region = Rect2( 284.579, 53.2105, 83.5125, 87.3684 )
+
+[sub_resource type="AtlasTexture" id=40]
+flags = 4
+atlas = ExtResource( 3 )
+region = Rect2( 401.901, 65.9422, 70.9425, 54.2642 )
+
+[sub_resource type="AtlasTexture" id=41]
+flags = 4
+atlas = ExtResource( 6 )
+region = Rect2( 401.901, 65.9422, 70.9425, 54.2642 )
+
+[sub_resource type="AtlasTexture" id=42]
+flags = 4
+atlas = ExtResource( 3 )
+region = Rect2( 384, 7, 83, 59 )
+
+[sub_resource type="AtlasTexture" id=43]
+flags = 4
+atlas = ExtResource( 6 )
+region = Rect2( 384, 7, 83, 59 )
+
+[sub_resource type="ViewportTexture" id=44]
+viewport_path = NodePath("Viewport")
+
+[sub_resource type="ViewportTexture" id=45]
+viewport_path = NodePath("Viewport")
+
+[sub_resource type="DynamicFont" id=46]
+size = 60
+outline_size = 3
+font_data = ExtResource( 14 )
+
+[sub_resource type="Shader" id=47]
+code = "shader_type canvas_item;
+
+uniform float frequency = 60;
+uniform float depth = 0.005;
+
+void fragment() {
+	vec2 uv = SCREEN_UV;
+	uv.x += sin(uv.y * frequency + TIME) * depth;
+	uv.x = clamp(uv.x, 0.0, 1.0);
+	vec3 c = textureLod(SCREEN_TEXTURE, uv, 0.0).rgb;
+	
+	COLOR.rgb = c;
+}
+"
+
+[sub_resource type="ShaderMaterial" id=48]
+shader = SubResource( 47 )
+shader_param/frequency = 60.0
+shader_param/depth = 0.005
+
+[sub_resource type="Animation" id=49]
+length = 0.3
+tracks/0/type = "value"
+tracks/0/path = NodePath("Control/2/Objects/S0/O00/Button:rect_scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1e-05, 1e-05 ), Vector2( 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Control/2/Objects/S0/O10/Button:rect_scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1e-05, 1e-05 ), Vector2( 1, 1 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Control/2/Objects/S0/O20/Button:rect_scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1e-05, 1e-05 ), Vector2( 1, 1 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Control/2/Objects/S0/O30/Button:rect_scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1e-05, 1e-05 ), Vector2( 1, 1 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Control/2/Objects/S1/O01/Button:rect_scale")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1e-05, 1e-05 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Control/2/Objects/S1/O11/Button:rect_scale")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1e-05, 1e-05 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Control/2/Objects/S1/O21/Button:rect_scale")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1e-05, 1e-05 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Control/2/Objects/S1/O31/Button:rect_scale")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1e-05, 1e-05 ) ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Control/2/Objects/S2/O12/Button:rect_scale")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1e-05, 1e-05 ) ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("Control/2/Objects/S2/O22/Button:rect_scale")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1e-05, 1e-05 ) ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("Control/2/Objects/S2/O32/Button:rect_scale")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1e-05, 1e-05 ) ]
+}
+tracks/11/type = "value"
+tracks/11/path = NodePath("Control/2/Objects/S3/O03/Button:rect_scale")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1e-05, 1e-05 ) ]
+}
+tracks/12/type = "value"
+tracks/12/path = NodePath("Control/2/Objects/S3/O13/Button:rect_scale")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1e-05, 1e-05 ) ]
+}
+tracks/13/type = "value"
+tracks/13/path = NodePath("Control/2/Objects/S3/O23/Button:rect_scale")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1e-05, 1e-05 ) ]
+}
+tracks/14/type = "value"
+tracks/14/path = NodePath("Control/2/Objects/S3/O33/Button:rect_scale")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1e-05, 1e-05 ) ]
+}
+tracks/15/type = "value"
+tracks/15/path = NodePath("Control/2/Objects/S0/O00/Button:mouse_filter")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ 2, 0 ]
+}
+tracks/16/type = "value"
+tracks/16/path = NodePath("Control/2/Objects/S0/O10/Button:mouse_filter")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ 0, 0 ]
+}
+tracks/17/type = "value"
+tracks/17/path = NodePath("Control/2/Objects/S0/O20/Button:mouse_filter")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ 0, 0 ]
+}
+tracks/18/type = "value"
+tracks/18/path = NodePath("Control/2/Objects/S0/O30/Button:mouse_filter")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ 0, 0 ]
+}
+tracks/19/type = "value"
+tracks/19/path = NodePath("Control/2/Objects/S1/O01/Button:mouse_filter")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 2 ]
+}
+tracks/20/type = "value"
+tracks/20/path = NodePath("Control/2/Objects/S1/O11/Button:mouse_filter")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 2 ]
+}
+tracks/21/type = "value"
+tracks/21/path = NodePath("Control/2/Objects/S1/O21/Button:mouse_filter")
+tracks/21/interp = 1
+tracks/21/loop_wrap = true
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 2 ]
+}
+tracks/22/type = "value"
+tracks/22/path = NodePath("Control/2/Objects/S1/O31/Button:mouse_filter")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 2 ]
+}
+tracks/23/type = "value"
+tracks/23/path = NodePath("Control/2/Objects/S2/O02/Button:mouse_filter")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 2 ]
+}
+tracks/24/type = "value"
+tracks/24/path = NodePath("Control/2/Objects/S2/O12/Button:mouse_filter")
+tracks/24/interp = 1
+tracks/24/loop_wrap = true
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 2 ]
+}
+tracks/25/type = "value"
+tracks/25/path = NodePath("Control/2/Objects/S2/O22/Button:mouse_filter")
+tracks/25/interp = 1
+tracks/25/loop_wrap = true
+tracks/25/imported = false
+tracks/25/enabled = true
+tracks/25/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 2 ]
+}
+tracks/26/type = "value"
+tracks/26/path = NodePath("Control/2/Objects/S2/O32/Button:mouse_filter")
+tracks/26/interp = 1
+tracks/26/loop_wrap = true
+tracks/26/imported = false
+tracks/26/enabled = true
+tracks/26/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 2 ]
+}
+tracks/27/type = "value"
+tracks/27/path = NodePath("Control/2/Objects/S3/O03/Button:mouse_filter")
+tracks/27/interp = 1
+tracks/27/loop_wrap = true
+tracks/27/imported = false
+tracks/27/enabled = true
+tracks/27/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 2 ]
+}
+tracks/28/type = "value"
+tracks/28/path = NodePath("Control/2/Objects/S3/O13/Button:mouse_filter")
+tracks/28/interp = 1
+tracks/28/loop_wrap = true
+tracks/28/imported = false
+tracks/28/enabled = true
+tracks/28/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 2 ]
+}
+tracks/29/type = "value"
+tracks/29/path = NodePath("Control/2/Objects/S3/O23/Button:mouse_filter")
+tracks/29/interp = 1
+tracks/29/loop_wrap = true
+tracks/29/imported = false
+tracks/29/enabled = true
+tracks/29/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 2 ]
+}
+tracks/30/type = "value"
+tracks/30/path = NodePath("Control/2/Objects/S3/O33/Button:mouse_filter")
+tracks/30/interp = 1
+tracks/30/loop_wrap = true
+tracks/30/imported = false
+tracks/30/enabled = true
+tracks/30/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 2 ]
+}
+
+[sub_resource type="Animation" id=50]
+length = 0.3
+tracks/0/type = "value"
+tracks/0/path = NodePath("Control/2/Objects/S0/O00/Button:rect_scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1e-05, 1e-05 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Control/2/Objects/S0/O20/Button:rect_scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1e-05, 1e-05 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Control/2/Objects/S0/O30/Button:rect_scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1e-05, 1e-05 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Control/2/Objects/S1/O01/Button:rect_scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1e-05, 1e-05 ), Vector2( 1, 1 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Control/2/Objects/S1/O11/Button:rect_scale")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1e-05, 1e-05 ), Vector2( 1, 1 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Control/2/Objects/S1/O21/Button:rect_scale")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1e-05, 1e-05 ), Vector2( 1, 1 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Control/2/Objects/S1/O31/Button:rect_scale")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1e-05, 1e-05 ), Vector2( 1, 1 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Control/2/Objects/S2/O02/Button:rect_scale")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1e-05, 1e-05 ) ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Control/2/Objects/S2/O12/Button:rect_scale")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1e-05, 1e-05 ) ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("Control/2/Objects/S2/O22/Button:rect_scale")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1e-05, 1e-05 ) ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("Control/2/Objects/S2/O32/Button:rect_scale")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1e-05, 1e-05 ) ]
+}
+tracks/11/type = "value"
+tracks/11/path = NodePath("Control/2/Objects/S3/O03/Button:rect_scale")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1e-05, 1e-05 ) ]
+}
+tracks/12/type = "value"
+tracks/12/path = NodePath("Control/2/Objects/S3/O13/Button:rect_scale")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1e-05, 1e-05 ) ]
+}
+tracks/13/type = "value"
+tracks/13/path = NodePath("Control/2/Objects/S3/O23/Button:rect_scale")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1e-05, 1e-05 ) ]
+}
+tracks/14/type = "value"
+tracks/14/path = NodePath("Control/2/Objects/S3/O33/Button:rect_scale")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1e-05, 1e-05 ) ]
+}
+tracks/15/type = "value"
+tracks/15/path = NodePath("Control/2/Objects/S0/O10/Button:rect_scale")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1e-05, 1e-05 ) ]
+}
+tracks/16/type = "value"
+tracks/16/path = NodePath("Control/2/Objects/S3/O23/Button:mouse_filter")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 2 ]
+}
+tracks/17/type = "value"
+tracks/17/path = NodePath("Control/2/Objects/S3/O13/Button:mouse_filter")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 2 ]
+}
+tracks/18/type = "value"
+tracks/18/path = NodePath("Control/2/Objects/S3/O03/Button:mouse_filter")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 2 ]
+}
+tracks/19/type = "value"
+tracks/19/path = NodePath("Control/2/Objects/S2/O32/Button:mouse_filter")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 2 ]
+}
+tracks/20/type = "value"
+tracks/20/path = NodePath("Control/2/Objects/S2/O22/Button:mouse_filter")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 2 ]
+}
+tracks/21/type = "value"
+tracks/21/path = NodePath("Control/2/Objects/S2/O12/Button:mouse_filter")
+tracks/21/interp = 1
+tracks/21/loop_wrap = true
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 2 ]
+}
+tracks/22/type = "value"
+tracks/22/path = NodePath("Control/2/Objects/S2/O02/Button:mouse_filter")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 2 ]
+}
+tracks/23/type = "value"
+tracks/23/path = NodePath("Control/2/Objects/S1/O31/Button:mouse_filter")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 0 ]
+}
+tracks/24/type = "value"
+tracks/24/path = NodePath("Control/2/Objects/S1/O21/Button:mouse_filter")
+tracks/24/interp = 1
+tracks/24/loop_wrap = true
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 0 ]
+}
+tracks/25/type = "value"
+tracks/25/path = NodePath("Control/2/Objects/S1/O11/Button:mouse_filter")
+tracks/25/interp = 1
+tracks/25/loop_wrap = true
+tracks/25/imported = false
+tracks/25/enabled = true
+tracks/25/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 0 ]
+}
+tracks/26/type = "value"
+tracks/26/path = NodePath("Control/2/Objects/S1/O01/Button:mouse_filter")
+tracks/26/interp = 1
+tracks/26/loop_wrap = true
+tracks/26/imported = false
+tracks/26/enabled = true
+tracks/26/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 0 ]
+}
+tracks/27/type = "value"
+tracks/27/path = NodePath("Control/2/Objects/S0/O30/Button:mouse_filter")
+tracks/27/interp = 1
+tracks/27/loop_wrap = true
+tracks/27/imported = false
+tracks/27/enabled = true
+tracks/27/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 2 ]
+}
+tracks/28/type = "value"
+tracks/28/path = NodePath("Control/2/Objects/S0/O20/Button:mouse_filter")
+tracks/28/interp = 1
+tracks/28/loop_wrap = true
+tracks/28/imported = false
+tracks/28/enabled = true
+tracks/28/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 2 ]
+}
+tracks/29/type = "value"
+tracks/29/path = NodePath("Control/2/Objects/S0/O10/Button:mouse_filter")
+tracks/29/interp = 1
+tracks/29/loop_wrap = true
+tracks/29/imported = false
+tracks/29/enabled = true
+tracks/29/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 2 ]
+}
+tracks/30/type = "value"
+tracks/30/path = NodePath("Control/2/Objects/S0/O00/Button:mouse_filter")
+tracks/30/interp = 1
+tracks/30/loop_wrap = true
+tracks/30/imported = false
+tracks/30/enabled = true
+tracks/30/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 2 ]
+}
+
+[sub_resource type="Animation" id=51]
+length = 0.3
+tracks/0/type = "value"
+tracks/0/path = NodePath("Control/2/Objects/S0/O00/Button:rect_scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1e-05, 1e-05 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Control/2/Objects/S0/O10/Button:rect_scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1e-05, 1e-05 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Control/2/Objects/S0/O20/Button:rect_scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1e-05, 1e-05 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Control/2/Objects/S0/O30/Button:rect_scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1e-05, 1e-05 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Control/2/Objects/S1/O01/Button:rect_scale")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1e-05, 1e-05 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Control/2/Objects/S1/O11/Button:rect_scale")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1e-05, 1e-05 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Control/2/Objects/S1/O21/Button:rect_scale")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1e-05, 1e-05 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Control/2/Objects/S1/O31/Button:rect_scale")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1e-05, 1e-05 ) ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Control/2/Objects/S2/O02/Button:rect_scale")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1e-05, 1e-05 ), Vector2( 1, 1 ) ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("Control/2/Objects/S2/O12/Button:rect_scale")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1e-05, 1e-05 ), Vector2( 1, 1 ) ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("Control/2/Objects/S2/O22/Button:rect_scale")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1e-05, 1e-05 ), Vector2( 1, 1 ) ]
+}
+tracks/11/type = "value"
+tracks/11/path = NodePath("Control/2/Objects/S2/O32/Button:rect_scale")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1e-05, 1e-05 ), Vector2( 1, 1 ) ]
+}
+tracks/12/type = "value"
+tracks/12/path = NodePath("Control/2/Objects/S3/O03/Button:rect_scale")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1e-05, 1e-05 ) ]
+}
+tracks/13/type = "value"
+tracks/13/path = NodePath("Control/2/Objects/S3/O13/Button:rect_scale")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1e-05, 1e-05 ) ]
+}
+tracks/14/type = "value"
+tracks/14/path = NodePath("Control/2/Objects/S3/O23/Button:rect_scale")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1e-05, 1e-05 ) ]
+}
+tracks/15/type = "value"
+tracks/15/path = NodePath("Control/2/Objects/S3/O33/Button:rect_scale")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1e-05, 1e-05 ) ]
+}
+tracks/16/type = "value"
+tracks/16/path = NodePath("Control/2/Objects/S3/O33/Button:mouse_filter")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 2 ]
+}
+tracks/17/type = "value"
+tracks/17/path = NodePath("Control/2/Objects/S3/O23/Button:mouse_filter")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 2 ]
+}
+tracks/18/type = "value"
+tracks/18/path = NodePath("Control/2/Objects/S3/O13/Button:mouse_filter")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 2 ]
+}
+tracks/19/type = "value"
+tracks/19/path = NodePath("Control/2/Objects/S3/O03/Button:mouse_filter")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 2 ]
+}
+tracks/20/type = "value"
+tracks/20/path = NodePath("Control/2/Objects/S2/O32/Button:mouse_filter")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ 2, 0 ]
+}
+tracks/21/type = "value"
+tracks/21/path = NodePath("Control/2/Objects/S2/O22/Button:mouse_filter")
+tracks/21/interp = 1
+tracks/21/loop_wrap = true
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ 2, 0 ]
+}
+tracks/22/type = "value"
+tracks/22/path = NodePath("Control/2/Objects/S2/O12/Button:mouse_filter")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ 2, 0 ]
+}
+tracks/23/type = "value"
+tracks/23/path = NodePath("Control/2/Objects/S2/O02/Button:mouse_filter")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 0 ]
+}
+tracks/24/type = "value"
+tracks/24/path = NodePath("Control/2/Objects/S1/O31/Button:mouse_filter")
+tracks/24/interp = 1
+tracks/24/loop_wrap = true
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 2 ]
+}
+tracks/25/type = "value"
+tracks/25/path = NodePath("Control/2/Objects/S1/O21/Button:mouse_filter")
+tracks/25/interp = 1
+tracks/25/loop_wrap = true
+tracks/25/imported = false
+tracks/25/enabled = true
+tracks/25/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 2 ]
+}
+tracks/26/type = "value"
+tracks/26/path = NodePath("Control/2/Objects/S1/O11/Button:mouse_filter")
+tracks/26/interp = 1
+tracks/26/loop_wrap = true
+tracks/26/imported = false
+tracks/26/enabled = true
+tracks/26/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 2 ]
+}
+tracks/27/type = "value"
+tracks/27/path = NodePath("Control/2/Objects/S1/O01/Button:mouse_filter")
+tracks/27/interp = 1
+tracks/27/loop_wrap = true
+tracks/27/imported = false
+tracks/27/enabled = true
+tracks/27/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 2 ]
+}
+tracks/28/type = "value"
+tracks/28/path = NodePath("Control/2/Objects/S0/O30/Button:mouse_filter")
+tracks/28/interp = 1
+tracks/28/loop_wrap = true
+tracks/28/imported = false
+tracks/28/enabled = true
+tracks/28/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 2 ]
+}
+tracks/29/type = "value"
+tracks/29/path = NodePath("Control/2/Objects/S0/O20/Button:mouse_filter")
+tracks/29/interp = 1
+tracks/29/loop_wrap = true
+tracks/29/imported = false
+tracks/29/enabled = true
+tracks/29/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 2 ]
+}
+tracks/30/type = "value"
+tracks/30/path = NodePath("Control/2/Objects/S0/O00/Button:mouse_filter")
+tracks/30/interp = 1
+tracks/30/loop_wrap = true
+tracks/30/imported = false
+tracks/30/enabled = true
+tracks/30/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 2 ]
+}
+
+[sub_resource type="Animation" id=52]
+length = 0.3
+tracks/0/type = "value"
+tracks/0/path = NodePath("Control/2/Objects/S3/O33/Button:rect_scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1e-05, 1e-05 ), Vector2( 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Control/2/Objects/S3/O23/Button:rect_scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1e-05, 1e-05 ), Vector2( 1, 1 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Control/2/Objects/S3/O13/Button:rect_scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1e-05, 1e-05 ), Vector2( 1, 1 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Control/2/Objects/S3/O03/Button:rect_scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1e-05, 1e-05 ), Vector2( 1, 1 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Control/2/Objects/S2/O32/Button:rect_scale")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1e-05, 1e-05 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Control/2/Objects/S2/O22/Button:rect_scale")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1e-05, 1e-05 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Control/2/Objects/S2/O12/Button:rect_scale")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1e-05, 1e-05 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Control/2/Objects/S2/O02/Button:rect_scale")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1e-05, 1e-05 ) ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Control/2/Objects/S1/O31/Button:rect_scale")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1e-05, 1e-05 ) ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("Control/2/Objects/S1/O21/Button:rect_scale")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1e-05, 1e-05 ) ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("Control/2/Objects/S1/O11/Button:rect_scale")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1e-05, 1e-05 ) ]
+}
+tracks/11/type = "value"
+tracks/11/path = NodePath("Control/2/Objects/S1/O01/Button:rect_scale")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1e-05, 1e-05 ) ]
+}
+tracks/12/type = "value"
+tracks/12/path = NodePath("Control/2/Objects/S0/O30/Button:rect_scale")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1e-05, 1e-05 ) ]
+}
+tracks/13/type = "value"
+tracks/13/path = NodePath("Control/2/Objects/S0/O20/Button:rect_scale")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1e-05, 1e-05 ) ]
+}
+tracks/14/type = "value"
+tracks/14/path = NodePath("Control/2/Objects/S0/O10/Button:rect_scale")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1e-05, 1e-05 ) ]
+}
+tracks/15/type = "value"
+tracks/15/path = NodePath("Control/2/Objects/S0/O00/Button:rect_scale")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1e-05, 1e-05 ) ]
+}
+tracks/16/type = "value"
+tracks/16/path = NodePath("Control/2/Objects/S3/O33/Button:mouse_filter")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ 2, 0 ]
+}
+tracks/17/type = "value"
+tracks/17/path = NodePath("Control/2/Objects/S3/O23/Button:mouse_filter")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ 0, 0 ]
+}
+tracks/18/type = "value"
+tracks/18/path = NodePath("Control/2/Objects/S3/O13/Button:mouse_filter")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/keys = {
+"times": PoolRealArray( 0.3 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 0 ]
+}
+tracks/19/type = "value"
+tracks/19/path = NodePath("Control/2/Objects/S3/O03/Button:mouse_filter")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ 0, 0 ]
+}
+tracks/20/type = "value"
+tracks/20/path = NodePath("Control/2/Objects/S2/O32/Button:mouse_filter")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 2 ]
+}
+tracks/21/type = "value"
+tracks/21/path = NodePath("Control/2/Objects/S2/O22/Button:mouse_filter")
+tracks/21/interp = 1
+tracks/21/loop_wrap = true
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 2 ]
+}
+tracks/22/type = "value"
+tracks/22/path = NodePath("Control/2/Objects/S2/O12/Button:mouse_filter")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 2 ]
+}
+tracks/23/type = "value"
+tracks/23/path = NodePath("Control/2/Objects/S2/O02/Button:mouse_filter")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 2 ]
+}
+tracks/24/type = "value"
+tracks/24/path = NodePath("Control/2/Objects/S1/O31/Button:mouse_filter")
+tracks/24/interp = 1
+tracks/24/loop_wrap = true
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 2 ]
+}
+tracks/25/type = "value"
+tracks/25/path = NodePath("Control/2/Objects/S1/O21/Button:mouse_filter")
+tracks/25/interp = 1
+tracks/25/loop_wrap = true
+tracks/25/imported = false
+tracks/25/enabled = true
+tracks/25/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 2 ]
+}
+tracks/26/type = "value"
+tracks/26/path = NodePath("Control/2/Objects/S1/O11/Button:mouse_filter")
+tracks/26/interp = 1
+tracks/26/loop_wrap = true
+tracks/26/imported = false
+tracks/26/enabled = true
+tracks/26/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 2 ]
+}
+tracks/27/type = "value"
+tracks/27/path = NodePath("Control/2/Objects/S1/O01/Button:mouse_filter")
+tracks/27/interp = 1
+tracks/27/loop_wrap = true
+tracks/27/imported = false
+tracks/27/enabled = true
+tracks/27/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 2 ]
+}
+tracks/28/type = "value"
+tracks/28/path = NodePath("Control/2/Objects/S0/O30/Button:mouse_filter")
+tracks/28/interp = 1
+tracks/28/loop_wrap = true
+tracks/28/imported = false
+tracks/28/enabled = true
+tracks/28/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 2 ]
+}
+tracks/29/type = "value"
+tracks/29/path = NodePath("Control/2/Objects/S0/O20/Button:mouse_filter")
+tracks/29/interp = 1
+tracks/29/loop_wrap = true
+tracks/29/imported = false
+tracks/29/enabled = true
+tracks/29/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 2 ]
+}
+tracks/30/type = "value"
+tracks/30/path = NodePath("Control/2/Objects/S0/O10/Button:mouse_filter")
+tracks/30/interp = 1
+tracks/30/loop_wrap = true
+tracks/30/imported = false
+tracks/30/enabled = true
+tracks/30/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 2 ]
+}
+tracks/31/type = "value"
+tracks/31/path = NodePath("Control/2/Objects/S0/O00/Button:mouse_filter")
+tracks/31/interp = 1
+tracks/31/loop_wrap = true
+tracks/31/imported = false
+tracks/31/enabled = true
+tracks/31/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 2 ]
+}
+
+[sub_resource type="Animation" id=53]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rect_scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0.5, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("TextureRect:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 8, 3.939 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("TextureRect:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -1034.29, 958.266 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("TextureRect2:rect_position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -1444.98, 243.645 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Control:rect_position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -1032.67, -72.7571 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Node2D/StaticBody2D/CollisionShape2D:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -1058.96, 975.501 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Node2D/StaticBody2D/CollisionShape2D:scale")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 2, 1 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Node2D/StaticBody2D/CollisionShape2D2:scale")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 2, 1 ) ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Node2D/StaticBody2D/CollisionShape2D3:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 35.3101, 1967.05 ) ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("Node2D/StaticBody2D/CollisionShape2D3:scale")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 2, 1 ) ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("Node2D/StaticBody2D/CollisionShape2D4:position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -16.84, -14.5814 ) ]
+}
+tracks/11/type = "value"
+tracks/11/path = NodePath("Node2D/StaticBody2D/CollisionShape2D4:scale")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 2, 1 ) ]
+}
+tracks/12/type = "value"
+tracks/12/path = NodePath("Control/0/VR/Button/0:texture")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ ExtResource( 8 ) ]
+}
+tracks/13/type = "value"
+tracks/13/path = NodePath("Control/0/VR/Button/0/2:visible")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/14/type = "value"
+tracks/14/path = NodePath("Control/0/VR/Button/0/3:visible")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/15/type = "value"
+tracks/15/path = NodePath("Control/0/VR/Button/0/4:visible")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/16/type = "value"
+tracks/16/path = NodePath("TextureRect4:position")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -1774.15, 894.645 ) ]
+}
+
+[sub_resource type="Animation" id=54]
+tracks/0/type = "value"
+tracks/0/path = NodePath("TextureRect4:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -940.365, 962.845 ), Vector2( -3000, 902.634 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("TextureRect4:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 3.9464, 3.93881 ), Vector2( 3.9464, 6.05881 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("TextureRect5:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -129.88, 947.358 ), Vector2( 489.29, 883.13 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("TextureRect5:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 3.9464, 3.93881 ), Vector2( 3.946, 6.059 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("TextureRect4:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("TextureRect5:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+
+[sub_resource type="Animation" id=55]
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rect_scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 0.5, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("TextureRect:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 3.9464, 3.93881 ), Vector2( 8, 3.939 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("TextureRect:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -554.197, 1009.89 ), Vector2( -1034.29, 958.266 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("TextureRect2:rect_position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -1256.98, 311.781 ), Vector2( -1529.52, 180.109 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Control:rect_position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -1088.73, 0 ), Vector2( -1032.67, -72.7571 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Node2D/StaticBody2D/CollisionShape2D:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -67.793, 985.825 ), Vector2( -1058.96, 975.501 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Node2D/StaticBody2D/CollisionShape2D:scale")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 2, 1 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Node2D/StaticBody2D/CollisionShape2D2:scale")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 2, 1 ) ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Node2D/StaticBody2D/CollisionShape2D3:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 520.568, 1961.89 ), Vector2( 35.3101, 1967.05 ) ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("Node2D/StaticBody2D/CollisionShape2D3:scale")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 2, 1 ) ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("Node2D/StaticBody2D/CollisionShape2D4:position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 530.366, -19.7438 ), Vector2( -16.84, -14.5814 ) ]
+}
+tracks/11/type = "value"
+tracks/11/path = NodePath("Node2D/StaticBody2D/CollisionShape2D4:scale")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 2, 1 ) ]
+}
+tracks/12/type = "value"
+tracks/12/path = NodePath("Control/0/VR/Button/0:texture")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ SubResource( 15 ) ]
+}
+tracks/13/type = "value"
+tracks/13/path = NodePath("Control/0/VR/Button/0/3:visible")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/14/type = "value"
+tracks/14/path = NodePath("Control/0/VR/Button/0/2:visible")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/15/type = "value"
+tracks/15/path = NodePath("Control/0/VR/Button/0/4:visible")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/16/type = "value"
+tracks/16/path = NodePath("Buttons/TextureButton2:mouse_filter")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ 2, 0 ]
+}
+tracks/17/type = "value"
+tracks/17/path = NodePath("Buttons/TextureButton:mouse_filter")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ 2, 0 ]
+}
+
+[sub_resource type="DynamicFont" id=56]
+size = 32
+font_data = ExtResource( 14 )
+
+[node name="ControlBtns" type="Control"]
+margin_left = 1076.0
+margin_right = 1076.0
+margin_bottom = 1920.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="0" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 11 )
+volume_db = -30.0
+
+[node name="1" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 16 )
+
+[node name="2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 15 )
+
+[node name="3" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 18 )
+volume_db = -30.0
+
+[node name="Buttons" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureButton" type="TextureButton" parent="Buttons"]
+margin_left = -2231.52
+margin_top = 7.21008
+margin_right = -1073.52
+margin_bottom = 1983.21
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureButton2" type="TextureButton" parent="Buttons"]
+margin_left = -1110.35
+margin_right = 47.6458
+margin_bottom = 1976.0
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="Sprite" parent="." groups=[
+"Ctrl",
+]]
+show_behind_parent = true
+position = Vector2( -554.197, 1009.89 )
+scale = Vector2( 3.9464, 3.93881 )
+texture = SubResource( 1 )
+
+[node name="TextureRect2" type="TextureRect" parent="." groups=[
+"Ctrl",
+]]
+show_behind_parent = true
+margin_left = -1256.98
+margin_top = 311.781
+margin_right = 23.025
+margin_bottom = 1031.78
+rect_rotation = -15.0
+texture = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Node2D" type="Node2D" parent="." groups=[
+"Ctrl",
+]]
+show_behind_parent = true
+position = Vector2( -1088.73, 0 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Node2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/StaticBody2D"]
+position = Vector2( -67.793, 985.825 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Node2D/StaticBody2D"]
+position = Vector2( 1137.38, 985.825 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Node2D/StaticBody2D"]
+position = Vector2( 520.568, 1961.89 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Node2D/StaticBody2D"]
+position = Vector2( 530.366, -19.7438 )
+shape = SubResource( 3 )
+
+[node name="RigidBody2D" type="RigidBody2D" parent="Node2D"]
+position = Vector2( 709.67, 1764.8 )
+rotation = -0.784939
+mass = 3.0
+linear_velocity = Vector2( -0.00741854, 0.00416778 )
+angular_velocity = 0.00143867
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/RigidBody2D"]
+position = Vector2( 6.18164, -6.18176 )
+scale = Vector2( 1e-05, 1e-05 )
+shape = SubResource( 4 )
+
+[node name="Sprite" type="Sprite" parent="Node2D/RigidBody2D/CollisionShape2D"]
+position = Vector2( -163744, 618172 )
+texture = ExtResource( 8 )
+
+[node name="RigidBody2D5" type="RigidBody2D" parent="Node2D"]
+position = Vector2( 476.138, 461.262 )
+rotation = -1.76245
+mass = 3.0
+linear_velocity = Vector2( 0.668151, 0.611368 )
+angular_velocity = -0.00293989
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/RigidBody2D5"]
+position = Vector2( 9.95557, 3.71146 )
+shape = SubResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="Node2D/RigidBody2D5"]
+position = Vector2( 4.54417, 3.8147e-05 )
+scale = Vector2( 1.44135, 1.35421 )
+texture = ExtResource( 7 )
+
+[node name="RigidBody2D6" type="RigidBody2D" parent="Node2D"]
+position = Vector2( 51.5039, 683.99 )
+rotation = 2.60942
+mass = 3.0
+linear_velocity = Vector2( -0.0142676, 0.24489 )
+angular_velocity = 2.40511e-06
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/RigidBody2D6"]
+position = Vector2( 9.95557, 3.71146 )
+shape = SubResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="Node2D/RigidBody2D6"]
+position = Vector2( 4.54417, 3.8147e-05 )
+scale = Vector2( 1.44135, 1.35421 )
+texture = ExtResource( 7 )
+
+[node name="RigidBody2D7" type="RigidBody2D" parent="Node2D"]
+position = Vector2( 559.79, 612.044 )
+rotation = -2.67432
+mass = 3.0
+linear_velocity = Vector2( 0.173683, 0.840876 )
+angular_velocity = 0.00289292
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/RigidBody2D7"]
+position = Vector2( 9.95557, 3.71146 )
+shape = SubResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="Node2D/RigidBody2D7"]
+position = Vector2( 4.54417, 3.8147e-05 )
+scale = Vector2( 1.44135, 1.35421 )
+texture = ExtResource( 7 )
+
+[node name="RigidBody2D8" type="RigidBody2D" parent="Node2D"]
+position = Vector2( 860.089, 772.299 )
+rotation = -0.42729
+mass = 3.0
+linear_velocity = Vector2( -0.439033, 0.292272 )
+angular_velocity = 0.00234012
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/RigidBody2D8"]
+position = Vector2( 9.95557, 3.71146 )
+shape = SubResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="Node2D/RigidBody2D8"]
+position = Vector2( 4.54417, 3.8147e-05 )
+scale = Vector2( 1.44135, 1.35421 )
+texture = ExtResource( 7 )
+
+[node name="RigidBody2D9" type="RigidBody2D" parent="Node2D"]
+position = Vector2( 372.07, 571.278 )
+rotation = 2.17102
+mass = 3.0
+linear_velocity = Vector2( 0.3159, 0.498146 )
+angular_velocity = 0.00539008
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/RigidBody2D9"]
+position = Vector2( 9.95557, 3.71146 )
+shape = SubResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="Node2D/RigidBody2D9"]
+position = Vector2( 4.54417, 3.8147e-05 )
+scale = Vector2( 1.44135, 1.35421 )
+texture = ExtResource( 7 )
+
+[node name="RigidBody2D10" type="RigidBody2D" parent="Node2D"]
+position = Vector2( 243.504, 817.543 )
+rotation = -1.1863
+mass = 3.0
+linear_velocity = Vector2( 2.51105, -0.386056 )
+angular_velocity = 0.0380183
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/RigidBody2D10"]
+position = Vector2( 9.95557, 3.71146 )
+shape = SubResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="Node2D/RigidBody2D10"]
+position = Vector2( 4.54417, 3.8147e-05 )
+scale = Vector2( 1.44135, 1.35421 )
+texture = ExtResource( 7 )
+
+[node name="RigidBody2D18" type="RigidBody2D" parent="Node2D"]
+position = Vector2( 869.797, 1094.36 )
+rotation = -1.02246
+mass = 3.0
+linear_velocity = Vector2( 0.0752406, 0.0854043 )
+angular_velocity = -0.00326369
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/RigidBody2D18"]
+position = Vector2( 9.95557, 3.71146 )
+shape = SubResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="Node2D/RigidBody2D18"]
+position = Vector2( 4.54417, 3.8147e-05 )
+scale = Vector2( 1.44135, 1.35421 )
+texture = ExtResource( 7 )
+
+[node name="RigidBody2D24" type="RigidBody2D" parent="Node2D"]
+position = Vector2( 201.078, 1499.92 )
+rotation = -0.490605
+mass = 3.0
+linear_velocity = Vector2( -0.055088, -0.0187144 )
+angular_velocity = -0.000499399
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/RigidBody2D24"]
+position = Vector2( 9.95557, 3.71146 )
+shape = SubResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="Node2D/RigidBody2D24"]
+position = Vector2( 4.54417, 3.8147e-05 )
+scale = Vector2( 1.44135, 1.35421 )
+texture = ExtResource( 7 )
+
+[node name="RigidBody2D25" type="RigidBody2D" parent="Node2D"]
+position = Vector2( 782.747, 1226.71 )
+rotation = -3.05221
+mass = 3.0
+linear_velocity = Vector2( 0.111237, 0.13195 )
+angular_velocity = 0.00218552
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/RigidBody2D25"]
+position = Vector2( 9.95557, 3.71146 )
+shape = SubResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="Node2D/RigidBody2D25"]
+position = Vector2( 4.54417, 3.8147e-05 )
+scale = Vector2( 1.44135, 1.35421 )
+texture = ExtResource( 7 )
+
+[node name="RigidBody2D26" type="RigidBody2D" parent="Node2D"]
+position = Vector2( 998.946, 1196.63 )
+rotation = -0.172079
+mass = 3.0
+linear_velocity = Vector2( 0.133848, -0.025863 )
+angular_velocity = 0.00220722
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/RigidBody2D26"]
+position = Vector2( 9.95557, 3.71146 )
+shape = SubResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="Node2D/RigidBody2D26"]
+position = Vector2( 4.54417, 3.8147e-05 )
+scale = Vector2( 1.44135, 1.35421 )
+texture = ExtResource( 7 )
+
+[node name="RigidBody2D27" type="RigidBody2D" parent="Node2D"]
+position = Vector2( 850.085, 1366.28 )
+rotation = -0.0112366
+mass = 3.0
+linear_velocity = Vector2( 0.00566566, 0.157578 )
+angular_velocity = -6.57007e-05
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/RigidBody2D27"]
+position = Vector2( 9.95557, 3.71146 )
+shape = SubResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="Node2D/RigidBody2D27"]
+position = Vector2( 4.54417, 3.8147e-05 )
+scale = Vector2( 1.44135, 1.35421 )
+texture = ExtResource( 7 )
+
+[node name="RigidBody2D28" type="RigidBody2D" parent="Node2D"]
+position = Vector2( 1019.48, 1537.16 )
+rotation = -5.35398e-05
+mass = 3.0
+linear_velocity = Vector2( -0.0121478, 0.00257331 )
+angular_velocity = 0.000171087
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/RigidBody2D28"]
+position = Vector2( 9.95557, 3.71146 )
+shape = SubResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="Node2D/RigidBody2D28"]
+position = Vector2( 4.54417, 3.8147e-05 )
+scale = Vector2( 1.44135, 1.35421 )
+texture = ExtResource( 7 )
+
+[node name="RigidBody2D33" type="RigidBody2D" parent="Node2D"]
+position = Vector2( 215.406, 1658.84 )
+rotation = 1.5221
+mass = 3.0
+linear_velocity = Vector2( 0.00316661, -0.0321027 )
+angular_velocity = -0.000289352
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/RigidBody2D33"]
+position = Vector2( 9.95557, 3.71146 )
+shape = SubResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="Node2D/RigidBody2D33"]
+position = Vector2( 4.54417, 3.8147e-05 )
+scale = Vector2( 1.44135, 1.35421 )
+texture = ExtResource( 7 )
+
+[node name="RigidBody2D34" type="RigidBody2D" parent="Node2D"]
+position = Vector2( 34.1069, 1487.9 )
+rotation = 0.529568
+mass = 3.0
+linear_velocity = Vector2( -0.0238879, 0.00536949 )
+angular_velocity = -5.17148e-05
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/RigidBody2D34"]
+position = Vector2( 9.95557, 3.71146 )
+shape = SubResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="Node2D/RigidBody2D34"]
+position = Vector2( 4.54417, 3.8147e-05 )
+scale = Vector2( 1.44135, 1.35421 )
+texture = ExtResource( 7 )
+
+[node name="RigidBody2D35" type="RigidBody2D" parent="Node2D"]
+position = Vector2( 35.5098, 1658.48 )
+rotation = 0.681555
+mass = 3.0
+linear_velocity = Vector2( -0.00304975, 0.00914146 )
+angular_velocity = -6.24288e-05
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/RigidBody2D35"]
+position = Vector2( 9.95557, 3.71146 )
+shape = SubResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="Node2D/RigidBody2D35"]
+position = Vector2( 4.54417, 3.8147e-05 )
+scale = Vector2( 1.44135, 1.35421 )
+texture = ExtResource( 7 )
+
+[node name="RigidBody2D36" type="RigidBody2D" parent="Node2D"]
+position = Vector2( 199.71, 1835.85 )
+rotation = -3.74906e-05
+mass = 3.0
+linear_velocity = Vector2( 0.0158355, -0.026457 )
+angular_velocity = 0.000268035
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/RigidBody2D36"]
+position = Vector2( 9.95557, 3.71146 )
+shape = SubResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="Node2D/RigidBody2D36"]
+position = Vector2( 4.54417, 3.8147e-05 )
+scale = Vector2( 1.44135, 1.35421 )
+texture = ExtResource( 7 )
+
+[node name="RigidBody2D37" type="RigidBody2D" parent="Node2D"]
+position = Vector2( 30.1934, 1835.85 )
+rotation = 2.33134e-05
+mass = 3.0
+linear_velocity = Vector2( 0.0170143, -0.00924864 )
+angular_velocity = -0.000271416
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/RigidBody2D37"]
+position = Vector2( 9.95557, 3.71146 )
+shape = SubResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="Node2D/RigidBody2D37"]
+position = Vector2( 4.54417, 3.8147e-05 )
+scale = Vector2( 1.44135, 1.35421 )
+texture = ExtResource( 7 )
+
+[node name="RigidBody2D38" type="RigidBody2D" parent="Node2D"]
+position = Vector2( 511.339, 1834.46 )
+rotation = 0.145427
+mass = 3.0
+linear_velocity = Vector2( 0.0248944, -0.0553021 )
+angular_velocity = 0.00104769
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/RigidBody2D38"]
+position = Vector2( 9.95557, 3.71146 )
+shape = SubResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="Node2D/RigidBody2D38"]
+position = Vector2( 4.54417, 3.8147e-05 )
+scale = Vector2( 1.44135, 1.35421 )
+texture = ExtResource( 7 )
+
+[node name="RigidBody2D39" type="RigidBody2D" parent="Node2D"]
+position = Vector2( 354.357, 1772.05 )
+rotation = -0.542398
+mass = 3.0
+linear_velocity = Vector2( 0.0294966, -0.0801192 )
+angular_velocity = -0.000395499
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/RigidBody2D39"]
+position = Vector2( 9.95557, 3.71146 )
+shape = SubResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="Node2D/RigidBody2D39"]
+position = Vector2( 4.54417, 3.8147e-05 )
+scale = Vector2( 1.44135, 1.35421 )
+texture = ExtResource( 7 )
+
+[node name="RigidBody2D40" type="RigidBody2D" parent="Node2D"]
+position = Vector2( 604.627, 1678.92 )
+rotation = 1.37477
+mass = 3.0
+linear_velocity = Vector2( -0.111266, -0.0906081 )
+angular_velocity = -0.00242402
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/RigidBody2D40"]
+position = Vector2( 9.95557, 3.71146 )
+shape = SubResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="Node2D/RigidBody2D40"]
+position = Vector2( 4.54417, 3.8147e-05 )
+scale = Vector2( 1.44135, 1.35421 )
+texture = ExtResource( 7 )
+
+[node name="RigidBody2D41" type="RigidBody2D" parent="Node2D"]
+position = Vector2( 680.887, 1834.64 )
+rotation = 0.124821
+mass = 3.0
+linear_velocity = Vector2( 0.003445, 0.00338753 )
+angular_velocity = 2.15977e-05
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/RigidBody2D41"]
+position = Vector2( 9.95557, 3.71146 )
+shape = SubResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="Node2D/RigidBody2D41"]
+position = Vector2( 4.54417, 3.8147e-05 )
+scale = Vector2( 1.44135, 1.35421 )
+texture = ExtResource( 7 )
+
+[node name="RigidBody2D42" type="RigidBody2D" parent="Node2D"]
+position = Vector2( 849.791, 1836.07 )
+rotation = -0.0214757
+mass = 3.0
+linear_velocity = Vector2( -0.00795204, 0.00221664 )
+angular_velocity = -0.000143721
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/RigidBody2D42"]
+position = Vector2( 9.95557, 3.71146 )
+shape = SubResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="Node2D/RigidBody2D42"]
+position = Vector2( 4.54417, 3.8147e-05 )
+scale = Vector2( 1.44135, 1.35421 )
+texture = ExtResource( 7 )
+
+[node name="RigidBody2D43" type="RigidBody2D" parent="Node2D"]
+position = Vector2( 944.356, 1680.35 )
+rotation = 1.02972
+mass = 3.0
+linear_velocity = Vector2( -0.0461214, -0.0204809 )
+angular_velocity = 0.000400914
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/RigidBody2D43"]
+position = Vector2( 9.95557, 3.71146 )
+shape = SubResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="Node2D/RigidBody2D43"]
+position = Vector2( 4.54417, 3.8147e-05 )
+scale = Vector2( 1.44135, 1.35421 )
+texture = ExtResource( 7 )
+
+[node name="RigidBody2D44" type="RigidBody2D" parent="Node2D"]
+position = Vector2( 850.272, 1537.4 )
+rotation = 0.0502657
+mass = 3.0
+linear_velocity = Vector2( -0.0668216, 0.0436055 )
+angular_velocity = 0.000335405
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/RigidBody2D44"]
+position = Vector2( 9.95557, 3.71146 )
+shape = SubResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="Node2D/RigidBody2D44"]
+position = Vector2( 4.54417, 3.8147e-05 )
+scale = Vector2( 1.44135, 1.35421 )
+texture = ExtResource( 7 )
+
+[node name="RigidBody2D45" type="RigidBody2D" parent="Node2D"]
+position = Vector2( 512.164, 1521.27 )
+rotation = 0.0395296
+mass = 3.0
+linear_velocity = Vector2( -0.107899, -0.205287 )
+angular_velocity = -0.00123089
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/RigidBody2D45"]
+position = Vector2( 9.95557, 3.71146 )
+shape = SubResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="Node2D/RigidBody2D45"]
+position = Vector2( 4.54417, 3.8147e-05 )
+scale = Vector2( 1.44135, 1.35421 )
+texture = ExtResource( 7 )
+
+[node name="RigidBody2D46" type="RigidBody2D" parent="Node2D"]
+position = Vector2( 1019.48, 1835.86 )
+rotation = -0.000254775
+mass = 3.0
+linear_velocity = Vector2( -0.0216647, -0.013272 )
+angular_velocity = -0.000220108
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/RigidBody2D46"]
+position = Vector2( 9.95557, 3.71146 )
+shape = SubResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="Node2D/RigidBody2D46"]
+position = Vector2( 4.54417, 3.8147e-05 )
+scale = Vector2( 1.44135, 1.35421 )
+texture = ExtResource( 7 )
+
+[node name="RigidBody2D47" type="RigidBody2D" parent="Node2D"]
+position = Vector2( 1019.45, 1365.48 )
+rotation = -0.00546536
+mass = 3.0
+linear_velocity = Vector2( -0.0127876, 0.0216472 )
+angular_velocity = -0.000534217
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/RigidBody2D47"]
+position = Vector2( 9.95557, 3.71146 )
+shape = SubResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="Node2D/RigidBody2D47"]
+position = Vector2( 4.54417, 3.8147e-05 )
+scale = Vector2( 1.44135, 1.35421 )
+texture = ExtResource( 7 )
+
+[node name="RigidBody2D50" type="RigidBody2D" parent="Node2D"]
+position = Vector2( 30.0396, 855.661 )
+rotation = -0.165759
+mass = 3.0
+linear_velocity = Vector2( 0.095883, 0.510794 )
+angular_velocity = -0.00218752
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/RigidBody2D50"]
+position = Vector2( 9.95557, 3.71146 )
+shape = SubResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="Node2D/RigidBody2D50"]
+position = Vector2( 4.54417, 3.8147e-05 )
+scale = Vector2( 1.44135, 1.35421 )
+texture = ExtResource( 7 )
+
+[node name="RigidBody2D52" type="RigidBody2D" parent="Node2D"]
+position = Vector2( 708.952, 1055.64 )
+rotation = 1.60806
+mass = 3.0
+linear_velocity = Vector2( -0.150556, 0.474468 )
+angular_velocity = -0.00354847
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/RigidBody2D52"]
+position = Vector2( 9.95557, 3.71146 )
+shape = SubResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="Node2D/RigidBody2D52"]
+position = Vector2( 4.54417, 3.8147e-05 )
+scale = Vector2( 1.44135, 1.35421 )
+texture = ExtResource( 7 )
+
+[node name="RigidBody2D32" type="RigidBody2D" parent="Node2D"]
+position = Vector2( 377.268, 1593.42 )
+rotation = 2.22457
+mass = 3.0
+linear_velocity = Vector2( -0.0517258, -0.114181 )
+angular_velocity = -0.000259617
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/RigidBody2D32"]
+position = Vector2( 9.95557, 3.71146 )
+shape = SubResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="Node2D/RigidBody2D32"]
+position = Vector2( 4.54417, 3.8147e-05 )
+scale = Vector2( 1.44135, 1.35421 )
+texture = ExtResource( 7 )
+
+[node name="RigidBody2D31" type="RigidBody2D" parent="Node2D"]
+position = Vector2( 687.577, 1382.08 )
+rotation = -1.75042
+mass = 3.0
+linear_velocity = Vector2( -0.0495663, 0.112039 )
+angular_velocity = 0.000700356
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/RigidBody2D31"]
+position = Vector2( 9.95557, 3.71146 )
+shape = SubResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="Node2D/RigidBody2D31"]
+position = Vector2( 4.54417, 3.8147e-05 )
+scale = Vector2( 1.44135, 1.35421 )
+texture = ExtResource( 7 )
+
+[node name="RigidBody2D30" type="RigidBody2D" parent="Node2D"]
+position = Vector2( 680.789, 1538.24 )
+rotation = 0.0408566
+mass = 3.0
+linear_velocity = Vector2( -0.0845678, -0.0890487 )
+angular_velocity = 0.0024087
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/RigidBody2D30"]
+position = Vector2( 9.95557, 3.71146 )
+shape = SubResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="Node2D/RigidBody2D30"]
+position = Vector2( 4.54417, 3.8147e-05 )
+scale = Vector2( 1.44135, 1.35421 )
+texture = ExtResource( 7 )
+
+[node name="RigidBody2D12" type="RigidBody2D" parent="Node2D"]
+position = Vector2( 448.192, 735.344 )
+rotation = 3.09831
+mass = 3.0
+linear_velocity = Vector2( 0.0106122, 0.190393 )
+angular_velocity = 0.00908771
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/RigidBody2D12"]
+position = Vector2( 9.95557, 3.71146 )
+shape = SubResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="Node2D/RigidBody2D12"]
+position = Vector2( 4.54417, 3.8147e-05 )
+scale = Vector2( 1.44135, 1.35421 )
+texture = ExtResource( 7 )
+
+[node name="RigidBody2D29" type="RigidBody2D" parent="Node2D"]
+position = Vector2( 773.302, 1679.9 )
+rotation = 1.06367
+mass = 3.0
+linear_velocity = Vector2( -0.110687, -0.0333437 )
+angular_velocity = -0.00106949
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/RigidBody2D29"]
+position = Vector2( 9.95557, 3.71146 )
+shape = SubResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="Node2D/RigidBody2D29"]
+position = Vector2( 4.54419, 0 )
+scale = Vector2( 1.44135, 1.35421 )
+texture = ExtResource( 7 )
+
+[node name="RigidBody2D16" type="RigidBody2D" parent="Node2D"]
+position = Vector2( 197.205, 622.845 )
+rotation = -2.10018
+mass = 3.0
+linear_velocity = Vector2( 0.101716, 0.0383366 )
+angular_velocity = 0.000126377
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/RigidBody2D16"]
+position = Vector2( 9.95557, 3.71146 )
+shape = SubResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="Node2D/RigidBody2D16"]
+position = Vector2( 4.54417, 3.8147e-05 )
+scale = Vector2( 1.44135, 1.35421 )
+texture = ExtResource( 7 )
+
+[node name="StoreR2" type="RigidBody2D" parent="Node2D"]
+position = Vector2( 577.483, 891.003 )
+rotation = 0.65691
+linear_velocity = Vector2( -0.412283, 0.391249 )
+angular_velocity = -0.000601215
+
+[node name="CS2" type="CollisionShape2D" parent="Node2D/StoreR2"]
+scale = Vector2( 0.25, 0.25 )
+shape = SubResource( 6 )
+
+[node name="Sprite" type="Sprite" parent="Node2D/StoreR2/CS2"]
+scale = Vector2( 0.25, 0.25 )
+flip_h = true
+
+[node name="Sprite2" type="Sprite" parent="Node2D/StoreR2/CS2"]
+position = Vector2( -40.0649, -7.58011 )
+scale = Vector2( 0.827791, 0.900649 )
+texture = SubResource( 7 )
+flip_h = true
+
+[node name="Tween2" type="Tween" parent="Node2D/StoreR2"]
+
+[node name="StoreR1" type="RigidBody2D" parent="Node2D"]
+position = Vector2( 250.308, 1157.45 )
+rotation = -0.327899
+mass = 3.0
+physics_material_override = SubResource( 8 )
+linear_velocity = Vector2( 1.14378, 1.13638 )
+angular_velocity = -0.0123777
+
+[node name="CS" type="CollisionShape2D" parent="Node2D/StoreR1"]
+position = Vector2( 20.7433, 22.5543 )
+rotation = 0.32769
+shape = SubResource( 6 )
+
+[node name="Sprite" type="Sprite" parent="Node2D/StoreR1/CS"]
+position = Vector2( -19.7272, 51.2837 )
+rotation = 2.63095
+texture = SubResource( 9 )
+flip_h = true
+
+[node name="Tween1" type="Tween" parent="Node2D/StoreR1"]
+
+[node name="Store" type="Viewport" parent="Node2D/StoreR1"]
+size = Vector2( 512, 512 )
+own_world = true
+transparent_bg = true
+handle_input_locally = false
+render_target_update_mode = 3
+
+[node name="Spatial" type="Spatial" parent="Node2D/StoreR1/Store"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 0, 0 )
+
+[node name="Camera" type="Camera" parent="Node2D/StoreR1/Store/Spatial"]
+transform = Transform( 0.644751, -0.167385, 0.745841, 0, 0.97573, 0.218978, -0.764393, -0.141186, 0.629103, 1.328, 0.806, 1.218 )
+current = true
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="DirectionalLight" type="DirectionalLight" parent="Node2D/StoreR1/Store"]
+transform = Transform( 0.173648, 0.754407, -0.633022, 0, 0.642788, 0.766045, 0.984808, -0.133022, 0.111619, 0, 2.15484, 0 )
+light_color = Color( 1, 0.909804, 0.623529, 1 )
+light_energy = 0.75
+
+[node name="Store2" type="Viewport" parent="Node2D/StoreR1"]
+size = Vector2( 512, 512 )
+own_world = true
+transparent_bg = true
+handle_input_locally = false
+render_target_update_mode = 3
+
+[node name="spatial" type="Spatial" parent="Node2D/StoreR1/Store2"]
+transform = Transform( 0.427973, 0.0349924, 0.903114, -0.109256, 0.993925, 0.0132641, -0.897162, -0.104348, 0.429197, 0.32, -0.064, -1.087 )
+
+[node name="Camera" type="Camera" parent="Node2D/StoreR1/Store2/spatial"]
+transform = Transform( 0.670022, -0.413789, 0.61632, 0.169277, 0.893528, 0.415876, -0.722784, -0.174318, 0.668728, 1.1009, 1.14339, 1.53949 )
+current = true
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="directionalLight" type="DirectionalLight" parent="Node2D/StoreR1/Store2"]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 0, 2.15484, 0 )
+light_color = Color( 1, 0.909804, 0.623529, 1 )
+light_energy = 0.75
+
+[node name="RigidBody2D49" type="RigidBody2D" parent="Node2D"]
+position = Vector2( 1020.46, 828.719 )
+rotation = 0.305747
+mass = 3.0
+linear_velocity = Vector2( 0.0102875, -0.209128 )
+angular_velocity = 0.00233851
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/RigidBody2D49"]
+position = Vector2( 9.95557, 3.71146 )
+shape = SubResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="Node2D/RigidBody2D49"]
+position = Vector2( 4.54417, 3.8147e-05 )
+scale = Vector2( 1.44135, 1.35421 )
+texture = ExtResource( 7 )
+
+[node name="RigidBody2D19" type="RigidBody2D" parent="Node2D"]
+position = Vector2( 529.494, 1358.15 )
+rotation = -3.06134
+mass = 3.0
+linear_velocity = Vector2( -0.128015, -0.159359 )
+angular_velocity = 0.00271859
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/RigidBody2D19"]
+position = Vector2( 9.95557, 3.71146 )
+shape = SubResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="Node2D/RigidBody2D19"]
+position = Vector2( 4.54417, 3.8147e-05 )
+scale = Vector2( 1.44135, 1.35421 )
+texture = ExtResource( 7 )
+
+[node name="RigidBody2D23" type="RigidBody2D" parent="Node2D"]
+position = Vector2( 356.229, 1424.11 )
+rotation = -0.00193513
+mass = 3.0
+linear_velocity = Vector2( -0.21362, -0.182806 )
+angular_velocity = -0.00221994
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/RigidBody2D23"]
+position = Vector2( 9.95557, 3.71146 )
+shape = SubResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="Node2D/RigidBody2D23"]
+position = Vector2( 4.54417, 3.8147e-05 )
+scale = Vector2( 1.44135, 1.35421 )
+texture = ExtResource( 7 )
+
+[node name="RigidBody2D51" type="RigidBody2D" parent="Node2D"]
+position = Vector2( 799.299, 934.927 )
+rotation = -0.749844
+mass = 3.0
+linear_velocity = Vector2( -0.416137, 0.321024 )
+angular_velocity = -0.00273987
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/RigidBody2D51"]
+position = Vector2( 9.95557, 3.71146 )
+shape = SubResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="Node2D/RigidBody2D51"]
+position = Vector2( 4.54417, 3.8147e-05 )
+scale = Vector2( 1.44135, 1.35421 )
+texture = ExtResource( 7 )
+
+[node name="RigidBody2D21" type="RigidBody2D" parent="Node2D"]
+position = Vector2( 67.263, 1329.17 )
+rotation = 2.94075
+mass = 3.0
+linear_velocity = Vector2( -0.0256188, -0.0281364 )
+angular_velocity = 0.000910071
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/RigidBody2D21"]
+position = Vector2( 9.95557, 3.71146 )
+shape = SubResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="Node2D/RigidBody2D21"]
+position = Vector2( 4.54417, 3.8147e-05 )
+scale = Vector2( 1.44135, 1.35421 )
+texture = ExtResource( 7 )
+
+[node name="RigidBody2D20" type="RigidBody2D" parent="Node2D"]
+position = Vector2( 49.787, 1034.79 )
+rotation = -2.97979
+mass = 3.0
+linear_velocity = Vector2( -0.265931, 0.322499 )
+angular_velocity = 0.00616565
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/RigidBody2D20"]
+position = Vector2( 9.95557, 3.71146 )
+shape = SubResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="Node2D/RigidBody2D20"]
+position = Vector2( 4.54417, 3.8147e-05 )
+scale = Vector2( 1.44135, 1.35421 )
+texture = ExtResource( 7 )
+
+[node name="RigidBody2D22" type="RigidBody2D" parent="Node2D"]
+position = Vector2( 50.5964, 1203.95 )
+rotation = 3.0295
+mass = 3.0
+linear_velocity = Vector2( 0.0171549, -0.0657358 )
+angular_velocity = -0.000403462
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/RigidBody2D22"]
+position = Vector2( 9.95557, 3.71146 )
+shape = SubResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="Node2D/RigidBody2D22"]
+position = Vector2( 4.54417, 3.8147e-05 )
+scale = Vector2( 1.44135, 1.35421 )
+texture = ExtResource( 7 )
+
+[node name="RigidBody2D17" type="RigidBody2D" parent="Node2D"]
+position = Vector2( 603.937, 1193.22 )
+rotation = 1.26362
+mass = 3.0
+linear_velocity = Vector2( 0.134485, -0.0867741 )
+angular_velocity = 0.000203803
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/RigidBody2D17"]
+position = Vector2( 9.95557, 3.71146 )
+shape = SubResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="Node2D/RigidBody2D17"]
+position = Vector2( 4.54417, 3.8147e-05 )
+scale = Vector2( 1.44135, 1.35421 )
+texture = ExtResource( 7 )
+
+[node name="RigidBody2D13" type="RigidBody2D" parent="Node2D"]
+position = Vector2( 923.397, 520.851 )
+rotation = -0.394291
+mass = 3.0
+linear_velocity = Vector2( -0.423821, 0.101214 )
+angular_velocity = -0.00360397
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/RigidBody2D13"]
+position = Vector2( 9.95557, 3.71146 )
+shape = SubResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="Node2D/RigidBody2D13"]
+position = Vector2( 5.36454, 2.5817 )
+scale = Vector2( 1.44135, 1.35421 )
+texture = ExtResource( 7 )
+
+[node name="RigidBody2D11" type="RigidBody2D" parent="Node2D"]
+position = Vector2( 804.468, 620.604 )
+rotation = 3.04585
+mass = 3.0
+linear_velocity = Vector2( -0.300285, 0.236613 )
+angular_velocity = -0.000653381
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/RigidBody2D11"]
+position = Vector2( 9.95557, 3.71146 )
+shape = SubResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="Node2D/RigidBody2D11"]
+position = Vector2( 4.54417, 3.8147e-05 )
+scale = Vector2( 1.44135, 1.35421 )
+texture = ExtResource( 7 )
+
+[node name="RigidBody2D15" type="RigidBody2D" parent="Node2D"]
+position = Vector2( 670.439, 495.31 )
+rotation = -0.885437
+mass = 3.0
+linear_velocity = Vector2( -0.778105, 0.150056 )
+angular_velocity = -0.0216039
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/RigidBody2D15"]
+position = Vector2( 9.95557, 3.71146 )
+shape = SubResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="Node2D/RigidBody2D15"]
+position = Vector2( 4.54417, 3.8147e-05 )
+scale = Vector2( 1.44135, 1.35421 )
+texture = ExtResource( 7 )
+
+[node name="RigidBody2D14" type="RigidBody2D" parent="Node2D"]
+position = Vector2( 1019.9, 657.779 )
+rotation = 0.211144
+mass = 3.0
+linear_velocity = Vector2( 0.010647, -0.193021 )
+angular_velocity = -0.00258164
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/RigidBody2D14"]
+position = Vector2( 9.95557, 3.71146 )
+shape = SubResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="Node2D/RigidBody2D14"]
+position = Vector2( 4.54417, 3.8147e-05 )
+scale = Vector2( 1.44135, 1.35421 )
+texture = ExtResource( 7 )
+
+[node name="RigidBody2D48" type="RigidBody2D" parent="Node2D"]
+position = Vector2( 1034.5, 997.722 )
+rotation = 1.83915
+mass = 3.0
+linear_velocity = Vector2( -0.0660275, -0.166616 )
+angular_velocity = 0.000250199
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/RigidBody2D48"]
+position = Vector2( 9.95557, 3.71146 )
+shape = SubResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="Node2D/RigidBody2D48"]
+position = Vector2( 4.54417, 3.8147e-05 )
+scale = Vector2( 1.44135, 1.35421 )
+texture = ExtResource( 7 )
+
+[node name="Control" type="Control" parent="." groups=[
+"Ctrl",
+]]
+margin_left = -1088.73
+margin_right = -1088.73
+margin_bottom = 1920.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="Control"]
+modulate = Color( 0, 0.419608, 0.807843, 0.72549 )
+margin_left = -1786.02
+margin_top = 2309.21
+margin_right = 1684.98
+margin_bottom = 3287.21
+rect_rotation = -26.2238
+texture = ExtResource( 8 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="0" type="Control" parent="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="22" type="TextureButton" parent="Control/0"]
+modulate = Color( 1, 1, 1, 0.784314 )
+margin_left = 273.864
+margin_top = 1887.27
+margin_right = 523.864
+margin_bottom = 2137.27
+toggle_mode = true
+texture_normal = ExtResource( 9 )
+texture_pressed = ExtResource( 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="Control/0/22"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="0S2" type="Control" parent="Control/0"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="TextureButton" parent="Control/0/0S2"]
+modulate = Color( 1, 1, 1, 0.784314 )
+margin_left = 792.0
+margin_top = 1043.56
+margin_right = 1042.0
+margin_bottom = 1293.56
+texture_normal = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="0" type="TextureRect" parent="Control/0/0S2/Button"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+texture = SubResource( 10 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="1" type="TextureRect" parent="Control/0/0S2/Button"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+texture = SubResource( 11 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pl" type="Control" parent="Control/0"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="TextureButton" parent="Control/0/Pl"]
+modulate = Color( 1, 1, 1, 0.784314 )
+margin_left = 542.0
+margin_top = 1176.38
+margin_right = 792.0
+margin_bottom = 1426.38
+texture_normal = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="0" type="TextureRect" parent="Control/0/Pl/Button"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 45.0505
+margin_top = 37.1005
+margin_right = -29.9495
+margin_bottom = -37.8995
+texture = SubResource( 12 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="1" type="TextureRect" parent="Control/0/Pl/Button"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+texture = SubResource( 12 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}
+
+[node name="0C1" type="Control" parent="Control/0"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="TextureButton" parent="Control/0/0C1"]
+modulate = Color( 1, 1, 1, 0.784314 )
+show_behind_parent = true
+margin_left = 283.5
+margin_top = 1293.56
+margin_right = 533.5
+margin_bottom = 1543.56
+texture_normal = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="0" type="TextureRect" parent="Control/0/0C1/Button"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 31.8004
+margin_top = 34.4504
+margin_right = -43.1996
+margin_bottom = -40.5496
+texture = SubResource( 13 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}
+
+[node name="1" type="TextureRect" parent="Control/0/0C1/Button"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+texture = SubResource( 14 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="03" type="Control" parent="Control/0"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="TextureButton" parent="Control/0/03"]
+modulate = Color( 1, 1, 1, 0.784314 )
+margin_left = 33.7837
+margin_top = 1426.38
+margin_right = 283.784
+margin_bottom = 1676.38
+toggle_mode = true
+texture_normal = ExtResource( 9 )
+texture_pressed = ExtResource( 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="0" type="TextureRect" parent="Control/0/03/Button"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+texture = SubResource( 10 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="1" type="TextureRect" parent="Control/0/03/Button"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+texture = SubResource( 11 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="04" type="Control" parent="Control/0"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -272.954
+margin_top = 135.152
+margin_right = -272.954
+margin_bottom = 135.152
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="TextureButton" parent="Control/0/04"]
+modulate = Color( 1, 1, 1, 0.784314 )
+margin_left = 33.7837
+margin_top = 1426.38
+margin_right = 283.784
+margin_bottom = 1676.38
+toggle_mode = true
+texture_normal = ExtResource( 9 )
+texture_pressed = ExtResource( 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="0" type="TextureRect" parent="Control/0/04/Button"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+texture = SubResource( 10 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="1" type="TextureRect" parent="Control/0/04/Button"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+texture = SubResource( 11 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="05" type="Control" parent="Control/0"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -262.354
+margin_top = 439.907
+margin_right = -262.354
+margin_bottom = 439.907
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="TextureButton" parent="Control/0/05"]
+modulate = Color( 1, 1, 1, 0.784314 )
+margin_left = 33.7837
+margin_top = 1426.38
+margin_right = 283.784
+margin_bottom = 1676.38
+toggle_mode = true
+texture_normal = ExtResource( 9 )
+texture_pressed = ExtResource( 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="0" type="TextureRect" parent="Control/0/05/Button"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+texture = SubResource( 10 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="1" type="TextureRect" parent="Control/0/05/Button"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+texture = SubResource( 11 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="06" type="Control" parent="Control/0"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -540.608
+margin_top = 265.004
+margin_right = -540.608
+margin_bottom = 265.004
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="TextureButton" parent="Control/0/06"]
+modulate = Color( 1, 1, 1, 0.784314 )
+margin_left = 33.7837
+margin_top = 1426.38
+margin_right = 283.784
+margin_bottom = 1676.38
+toggle_mode = true
+texture_normal = ExtResource( 9 )
+texture_pressed = ExtResource( 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="0" type="TextureRect" parent="Control/0/06/Button"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+texture = SubResource( 10 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="1" type="TextureRect" parent="Control/0/06/Button"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+texture = SubResource( 11 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="07" type="Control" parent="Control/0"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -808.262
+margin_top = 402.806
+margin_right = -808.262
+margin_bottom = 402.806
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="TextureButton" parent="Control/0/07"]
+modulate = Color( 1, 1, 1, 0.784314 )
+margin_left = 33.7837
+margin_top = 1426.38
+margin_right = 283.784
+margin_bottom = 1676.38
+toggle_mode = true
+texture_normal = ExtResource( 9 )
+texture_pressed = ExtResource( 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="0" type="TextureRect" parent="Control/0/07/Button"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+texture = SubResource( 10 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="1" type="TextureRect" parent="Control/0/07/Button"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+texture = SubResource( 11 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="M6S" type="Control" parent="Control/0" groups=[
+"Button",
+]]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="TextureButton" parent="Control/0/M6S"]
+modulate = Color( 1, 1, 1, 0.784314 )
+margin_left = 792.0
+margin_top = 1324.33
+margin_right = 1042.0
+margin_bottom = 1574.33
+texture_normal = ExtResource( 9 )
+texture_pressed = ExtResource( 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="0" type="TextureRect" parent="Control/0/M6S/Button"]
+modulate = Color( 0.862745, 0.992157, 1, 0.419608 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+texture = SubResource( 10 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="1" type="TextureRect" parent="Control/0/M6S/Button"]
+visible = false
+modulate = Color( 0.741176, 0.741176, 0.741176, 1 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+texture = SubResource( 11 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VR" type="Control" parent="Control/0"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="TextureButton" parent="Control/0/VR"]
+modulate = Color( 1, 1, 1, 0.784314 )
+margin_left = 542.0
+margin_top = 1458.4
+margin_right = 792.0
+margin_bottom = 1708.4
+texture_normal = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="0" type="TextureRect" parent="Control/0/VR/Button"]
+modulate = Color( 0.733333, 0.74902, 1, 0.933333 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 51.833
+margin_top = 73.0
+margin_right = -48.167
+margin_bottom = -71.0
+texture = SubResource( 15 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="4" type="TextureRect" parent="Control/0/VR/Button/0"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 9.0
+margin_top = 4.0
+margin_right = -8.0
+margin_bottom = -6.0
+texture = ExtResource( 8 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="3" type="TextureRect" parent="Control/0/VR/Button/0"]
+visible = false
+modulate = Color( 0.27451, 0.290196, 0.513726, 1 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 49.0
+margin_top = 36.0
+margin_right = -88.0
+margin_bottom = 32.0
+rect_rotation = -53.7318
+texture = ExtResource( 8 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="2" type="TextureRect" parent="Control/0/VR/Button/0"]
+visible = false
+self_modulate = Color( 0, 0.0470588, 0.231373, 1 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 16.1813
+margin_top = 7.41821
+margin_right = -90.8187
+margin_bottom = -67.5818
+texture = ExtResource( 8 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="1" type="TextureRect" parent="Control/0/VR/Button"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+texture = SubResource( 16 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="12" type="Control" parent="Control/0"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+
+[node name="Button" type="TextureButton" parent="Control/0/12"]
+modulate = Color( 1, 1, 1, 0.784314 )
+margin_left = 283.784
+margin_top = 1586.65
+margin_right = 533.784
+margin_bottom = 1836.65
+toggle_mode = true
+texture_normal = ExtResource( 9 )
+texture_pressed = ExtResource( 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="0" type="TextureRect" parent="Control/0/12/Button"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+texture = SubResource( 10 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="1" type="TextureRect" parent="Control/0/12/Button"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+texture = SubResource( 11 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="13" type="Control" parent="Control/0"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+
+[node name="Button" type="TextureButton" parent="Control/0/13"]
+modulate = Color( 1, 1, 1, 0.784314 )
+margin_left = 23.8637
+margin_top = 1719.32
+margin_right = 273.864
+margin_bottom = 1969.32
+toggle_mode = true
+texture_normal = ExtResource( 9 )
+texture_pressed = ExtResource( 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="0" type="TextureRect" parent="Control/0/13/Button"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+texture = SubResource( 10 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="1" type="TextureRect" parent="Control/0/13/Button"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+texture = SubResource( 11 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="20" type="Control" parent="Control/0"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="TextureButton" parent="Control/0/20"]
+modulate = Color( 1, 1, 1, 0.784314 )
+margin_left = 792.0
+margin_top = 1614.64
+margin_right = 1042.0
+margin_bottom = 1864.64
+toggle_mode = true
+texture_normal = ExtResource( 9 )
+texture_pressed = ExtResource( 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="0" type="TextureRect" parent="Control/0/20/Button"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+texture = SubResource( 10 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="1" type="TextureRect" parent="Control/0/20/Button"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+texture = SubResource( 11 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="21" type="Control" parent="Control/0"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="TextureButton" parent="Control/0/21"]
+modulate = Color( 1, 1, 1, 0.784314 )
+margin_left = 542.0
+margin_top = 1746.08
+margin_right = 792.0
+margin_bottom = 1996.08
+toggle_mode = true
+texture_normal = ExtResource( 9 )
+texture_pressed = ExtResource( 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="0" type="TextureRect" parent="Control/0/21/Button"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+texture = SubResource( 10 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="1" type="TextureRect" parent="Control/0/21/Button"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+texture = SubResource( 11 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="1" type="Control" parent="Control"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="M3S" type="Control" parent="Control/1" groups=[
+"Button",
+]]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="TextureButton" parent="Control/1/M3S"]
+modulate = Color( 1, 1, 1, 0.784314 )
+margin_left = 792.0
+margin_top = 1324.33
+margin_right = 1042.0
+margin_bottom = 1574.33
+texture_normal = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="0" type="TextureRect" parent="Control/1/M3S/Button"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+texture = SubResource( 17 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="1" type="TextureRect" parent="Control/1/M3S/Button"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+texture = SubResource( 18 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="S4S" type="Control" parent="Control/1" groups=[
+"Button",
+]]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="TextureButton" parent="Control/1/S4S"]
+modulate = Color( 1, 1, 1, 0.784314 )
+margin_left = 542.0
+margin_top = 1176.38
+margin_right = 792.0
+margin_bottom = 1426.38
+texture_normal = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="0" type="TextureRect" parent="Control/1/S4S/Button"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+texture = SubResource( 19 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}
+
+[node name="1" type="TextureRect" parent="Control/1/S4S/Button"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+texture = SubResource( 20 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}
+
+[node name="C2S" type="Control" parent="Control/1" groups=[
+"Button",
+]]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="TextureButton" parent="Control/1/C2S"]
+modulate = Color( 1, 1, 1, 0.784314 )
+margin_left = 792.0
+margin_top = 1043.56
+margin_right = 1042.0
+margin_bottom = 1293.56
+texture_normal = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="0" type="TextureRect" parent="Control/1/C2S/Button"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+texture = SubResource( 21 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="1" type="TextureRect" parent="Control/1/C2S/Button"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+texture = SubResource( 22 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="22" type="TextureButton" parent="Control/1"]
+modulate = Color( 1, 1, 1, 0.784314 )
+margin_left = 273.864
+margin_top = 1887.27
+margin_right = 523.864
+margin_bottom = 2137.27
+toggle_mode = true
+texture_normal = ExtResource( 9 )
+texture_pressed = ExtResource( 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="Control/1/22"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="1M0" type="Control" parent="Control/1"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="TextureButton" parent="Control/1/1M0"]
+modulate = Color( 1, 1, 1, 0.784314 )
+margin_left = 283.5
+margin_top = 1293.56
+margin_right = 533.5
+margin_bottom = 1543.56
+texture_normal = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="0" type="TextureRect" parent="Control/1/1M0/Button"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+texture = SubResource( 23 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="1" type="TextureRect" parent="Control/1/1M0/Button"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+texture = SubResource( 14 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="030" type="Control" parent="Control/1"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="TextureButton" parent="Control/1/030"]
+modulate = Color( 1, 1, 1, 0.784314 )
+margin_left = 33.7837
+margin_top = 1426.38
+margin_right = 283.784
+margin_bottom = 1676.38
+texture_normal = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="0" type="TextureRect" parent="Control/1/030/Button"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+texture = SubResource( 10 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="1" type="TextureRect" parent="Control/1/030/Button"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+texture = SubResource( 11 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="110" type="Control" parent="Control/1"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="TextureButton" parent="Control/1/110"]
+modulate = Color( 1, 1, 1, 0.784314 )
+margin_left = 542.0
+margin_top = 1458.4
+margin_right = 792.0
+margin_bottom = 1708.4
+texture_normal = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="0" type="TextureRect" parent="Control/1/110/Button"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+texture = SubResource( 24 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="1" type="TextureRect" parent="Control/1/110/Button"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+texture = SubResource( 11 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="120" type="Control" parent="Control/1"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+
+[node name="Button" type="TextureButton" parent="Control/1/120"]
+modulate = Color( 1, 1, 1, 0.784314 )
+margin_left = 283.784
+margin_top = 1586.65
+margin_right = 533.784
+margin_bottom = 1836.65
+texture_normal = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="0" type="TextureRect" parent="Control/1/120/Button"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+texture = SubResource( 10 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="1" type="TextureRect" parent="Control/1/120/Button"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+texture = SubResource( 11 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="130" type="Control" parent="Control/1"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+
+[node name="Button" type="TextureButton" parent="Control/1/130"]
+modulate = Color( 1, 1, 1, 0.784314 )
+margin_left = 23.8637
+margin_top = 1719.32
+margin_right = 273.864
+margin_bottom = 1969.32
+texture_normal = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="0" type="TextureRect" parent="Control/1/130/Button"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+texture = SubResource( 10 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="1" type="TextureRect" parent="Control/1/130/Button"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+texture = SubResource( 11 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="200" type="Control" parent="Control/1"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+
+[node name="Button" type="TextureButton" parent="Control/1/200"]
+modulate = Color( 1, 1, 1, 0.784314 )
+margin_left = 792.0
+margin_top = 1614.64
+margin_right = 1042.0
+margin_bottom = 1864.64
+texture_normal = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="0" type="TextureRect" parent="Control/1/200/Button"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+texture = SubResource( 10 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="1" type="TextureRect" parent="Control/1/200/Button"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+texture = SubResource( 11 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="11" type="Control" parent="Control/1"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -272.954
+margin_top = 135.152
+margin_right = -272.954
+margin_bottom = 135.152
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="TextureButton" parent="Control/1/11"]
+modulate = Color( 1, 1, 1, 0.784314 )
+margin_left = 33.7837
+margin_top = 1426.38
+margin_right = 283.784
+margin_bottom = 1676.38
+toggle_mode = true
+texture_normal = ExtResource( 9 )
+texture_pressed = ExtResource( 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="0" type="TextureRect" parent="Control/1/11/Button"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+texture = SubResource( 10 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="1" type="TextureRect" parent="Control/1/11/Button"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+texture = SubResource( 11 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="10" type="Control" parent="Control/1"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -262.354
+margin_top = 439.907
+margin_right = -262.354
+margin_bottom = 439.907
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="TextureButton" parent="Control/1/10"]
+modulate = Color( 1, 1, 1, 0.784314 )
+margin_left = 33.7837
+margin_top = 1426.38
+margin_right = 283.784
+margin_bottom = 1676.38
+toggle_mode = true
+texture_normal = ExtResource( 9 )
+texture_pressed = ExtResource( 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="0" type="TextureRect" parent="Control/1/10/Button"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+texture = SubResource( 10 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="1" type="TextureRect" parent="Control/1/10/Button"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+texture = SubResource( 11 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="09" type="Control" parent="Control/1"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -540.608
+margin_top = 265.004
+margin_right = -540.608
+margin_bottom = 265.004
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="TextureButton" parent="Control/1/09"]
+modulate = Color( 1, 1, 1, 0.784314 )
+margin_left = 33.7837
+margin_top = 1426.38
+margin_right = 283.784
+margin_bottom = 1676.38
+toggle_mode = true
+texture_normal = ExtResource( 9 )
+texture_pressed = ExtResource( 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="0" type="TextureRect" parent="Control/1/09/Button"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+texture = SubResource( 10 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="1" type="TextureRect" parent="Control/1/09/Button"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+texture = SubResource( 11 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="08" type="Control" parent="Control/1"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -808.262
+margin_top = 402.806
+margin_right = -808.262
+margin_bottom = 402.806
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="TextureButton" parent="Control/1/08"]
+modulate = Color( 1, 1, 1, 0.784314 )
+margin_left = 33.7837
+margin_top = 1426.38
+margin_right = 283.784
+margin_bottom = 1676.38
+toggle_mode = true
+texture_normal = ExtResource( 9 )
+texture_pressed = ExtResource( 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="0" type="TextureRect" parent="Control/1/08/Button"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+texture = SubResource( 10 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="1" type="TextureRect" parent="Control/1/08/Button"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+texture = SubResource( 11 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="210" type="Control" parent="Control/1"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="TextureButton" parent="Control/1/210"]
+modulate = Color( 1, 1, 1, 0.784314 )
+margin_left = 542.0
+margin_top = 1746.08
+margin_right = 792.0
+margin_bottom = 1996.08
+texture_normal = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="0" type="TextureRect" parent="Control/1/210/Button"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+texture = SubResource( 10 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="1" type="TextureRect" parent="Control/1/210/Button"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+texture = SubResource( 11 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="2" type="Control" parent="Control"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="30" type="Control" parent="Control/2"]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="220" type="TextureButton" parent="Control/2"]
+modulate = Color( 1, 1, 1, 0.784314 )
+margin_left = 273.864
+margin_top = 1887.27
+margin_right = 523.864
+margin_bottom = 2137.27
+toggle_mode = true
+texture_normal = ExtResource( 9 )
+texture_pressed = ExtResource( 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="Control/2/220"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="2S0" type="Control" parent="Control/2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="TextureButton" parent="Control/2/2S0"]
+modulate = Color( 1, 1, 1, 0.784314 )
+margin_left = 792.0
+margin_top = 1043.56
+margin_right = 1042.0
+margin_bottom = 1293.56
+texture_normal = ExtResource( 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="0" type="TextureRect" parent="Control/2/2S0/Button"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+texture = SubResource( 25 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="P00" type="Control" parent="Control/2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="TextureButton" parent="Control/2/P00"]
+modulate = Color( 1, 1, 1, 0.784314 )
+margin_left = 542.0
+margin_top = 1176.38
+margin_right = 792.0
+margin_bottom = 1426.38
+texture_normal = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="0" type="TextureRect" parent="Control/2/P00/Button"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+texture = SubResource( 26 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}
+
+[node name="1" type="TextureRect" parent="Control/2/P00/Button"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+texture = SubResource( 27 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}
+
+[node name="P10" type="Control" parent="Control/2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="TextureButton" parent="Control/2/P10"]
+modulate = Color( 1, 1, 1, 0.784314 )
+margin_left = 283.5
+margin_top = 1293.56
+margin_right = 533.5
+margin_bottom = 1543.56
+texture_normal = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="0" type="TextureRect" parent="Control/2/P10/Button"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+texture = SubResource( 28 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="1" type="TextureRect" parent="Control/2/P10/Button"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+texture = SubResource( 29 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="P20" type="Control" parent="Control/2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="TextureButton" parent="Control/2/P20"]
+modulate = Color( 1, 1, 1, 0.784314 )
+margin_left = 792.0
+margin_top = 1324.33
+margin_right = 1042.0
+margin_bottom = 1574.33
+texture_normal = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="0" type="TextureRect" parent="Control/2/P20/Button"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+texture = SubResource( 30 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="1" type="TextureRect" parent="Control/2/P20/Button"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+texture = SubResource( 31 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="P30" type="Control" parent="Control/2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="TextureButton" parent="Control/2/P30"]
+modulate = Color( 1, 1, 1, 0.784314 )
+margin_left = 542.0
+margin_top = 1458.4
+margin_right = 792.0
+margin_bottom = 1708.4
+texture_normal = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="0" type="TextureRect" parent="Control/2/P30/Button"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+texture = SubResource( 32 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="1" type="TextureRect" parent="Control/2/P30/Button"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+texture = SubResource( 33 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="R1S" type="Control" parent="Control/2" groups=[
+"Button",
+]]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="1" type="Control" parent="Control/2/R1S"]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="Button" type="TextureButton" parent="Control/2/R1S"]
+modulate = Color( 1, 1, 1, 0.784314 )
+margin_left = 23.8637
+margin_top = 1719.32
+margin_right = 273.864
+margin_bottom = 1969.32
+texture_normal = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="0" type="TextureRect" parent="Control/2/R1S/Button"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 28.0
+margin_top = 50.0
+margin_right = -37.0003
+margin_bottom = -45.0
+texture = SubResource( 34 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="1" type="TextureRect" parent="Control/2/R1S/Button"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+texture = SubResource( 35 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="11" type="Control" parent="Control/2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -272.954
+margin_top = 135.152
+margin_right = -272.954
+margin_bottom = 135.152
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="TextureButton" parent="Control/2/11"]
+modulate = Color( 1, 1, 1, 0.784314 )
+margin_left = 33.7837
+margin_top = 1426.38
+margin_right = 283.784
+margin_bottom = 1676.38
+toggle_mode = true
+texture_normal = ExtResource( 9 )
+texture_pressed = ExtResource( 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="0" type="TextureRect" parent="Control/2/11/Button"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+texture = SubResource( 10 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="1" type="TextureRect" parent="Control/2/11/Button"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+texture = SubResource( 11 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="10" type="Control" parent="Control/2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -262.354
+margin_top = 439.907
+margin_right = -262.354
+margin_bottom = 439.907
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="TextureButton" parent="Control/2/10"]
+modulate = Color( 1, 1, 1, 0.784314 )
+margin_left = 33.7837
+margin_top = 1426.38
+margin_right = 283.784
+margin_bottom = 1676.38
+toggle_mode = true
+texture_normal = ExtResource( 9 )
+texture_pressed = ExtResource( 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="0" type="TextureRect" parent="Control/2/10/Button"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+texture = SubResource( 10 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="1" type="TextureRect" parent="Control/2/10/Button"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+texture = SubResource( 11 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="09" type="Control" parent="Control/2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -540.608
+margin_top = 265.004
+margin_right = -540.608
+margin_bottom = 265.004
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="TextureButton" parent="Control/2/09"]
+modulate = Color( 1, 1, 1, 0.784314 )
+margin_left = 33.7837
+margin_top = 1426.38
+margin_right = 283.784
+margin_bottom = 1676.38
+toggle_mode = true
+texture_normal = ExtResource( 9 )
+texture_pressed = ExtResource( 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="0" type="TextureRect" parent="Control/2/09/Button"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+texture = SubResource( 10 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="1" type="TextureRect" parent="Control/2/09/Button"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+texture = SubResource( 11 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="08" type="Control" parent="Control/2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -808.262
+margin_top = 402.806
+margin_right = -808.262
+margin_bottom = 402.806
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="TextureButton" parent="Control/2/08"]
+modulate = Color( 1, 1, 1, 0.784314 )
+margin_left = 33.7837
+margin_top = 1426.38
+margin_right = 283.784
+margin_bottom = 1676.38
+toggle_mode = true
+texture_normal = ExtResource( 9 )
+texture_pressed = ExtResource( 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="0" type="TextureRect" parent="Control/2/08/Button"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+texture = SubResource( 10 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="1" type="TextureRect" parent="Control/2/08/Button"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+texture = SubResource( 11 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Objects" type="Control" parent="Control/2"]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="S0" type="Control" parent="Control/2/Objects"]
+margin_right = 40.0
+margin_bottom = 40.0
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="O00" type="Control" parent="Control/2/Objects/S0" groups=[
+"Button",
+]]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="6" type="Control" parent="Control/2/Objects/S0/O00"]
+margin_left = 1088.73
+margin_right = 1128.73
+margin_bottom = 40.0
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="TextureButton" parent="Control/2/Objects/S0/O00"]
+modulate = Color( 1, 1, 1, 0.784314 )
+margin_left = 34.0
+margin_top = 1426.0
+margin_right = 284.0
+margin_bottom = 1676.0
+rect_scale = Vector2( 1e-05, 1e-05 )
+rect_pivot_offset = Vector2( 125, 125 )
+mouse_filter = 2
+texture_normal = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="1" type="TextureRect" parent="Control/2/Objects/S0/O00/Button"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+mouse_filter = 2
+texture = SubResource( 36 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="0" type="TextureRect" parent="Control/2/Objects/S0/O00/Button"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+mouse_filter = 2
+texture = SubResource( 37 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="O10" type="Control" parent="Control/2/Objects/S0" groups=[
+"Button",
+]]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="5" type="Control" parent="Control/2/Objects/S0/O10"]
+margin_left = 1088.73
+margin_right = 1128.73
+margin_bottom = 40.0
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="TextureButton" parent="Control/2/Objects/S0/O10"]
+modulate = Color( 1, 1, 1, 0.784314 )
+margin_left = 283.784
+margin_top = 1586.65
+margin_right = 533.784
+margin_bottom = 1836.65
+rect_scale = Vector2( 1e-05, 1e-05 )
+rect_pivot_offset = Vector2( 125, 125 )
+texture_normal = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="1" type="TextureRect" parent="Control/2/Objects/S0/O10/Button"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+mouse_filter = 2
+texture = SubResource( 38 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="0" type="TextureRect" parent="Control/2/Objects/S0/O10/Button"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+mouse_filter = 2
+texture = SubResource( 39 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="O20" type="Control" parent="Control/2/Objects/S0" groups=[
+"Button",
+]]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="4" type="Control" parent="Control/2/Objects/S0/O20"]
+margin_left = 1088.73
+margin_right = 1128.73
+margin_bottom = 40.0
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="TextureButton" parent="Control/2/Objects/S0/O20"]
+modulate = Color( 1, 1, 1, 0.784314 )
+margin_left = 542.0
+margin_top = 1746.08
+margin_right = 792.0
+margin_bottom = 1996.08
+rect_scale = Vector2( 1e-05, 1e-05 )
+rect_pivot_offset = Vector2( 125, 125 )
+texture_normal = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="1" type="TextureRect" parent="Control/2/Objects/S0/O20/Button"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+mouse_filter = 2
+texture = SubResource( 40 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="0" type="TextureRect" parent="Control/2/Objects/S0/O20/Button"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+mouse_filter = 2
+texture = SubResource( 41 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="O30" type="Control" parent="Control/2/Objects/S0" groups=[
+"Button",
+]]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="7" type="Control" parent="Control/2/Objects/S0/O30"]
+margin_left = 1088.73
+margin_right = 1128.73
+margin_bottom = 40.0
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="TextureButton" parent="Control/2/Objects/S0/O30"]
+modulate = Color( 1, 1, 1, 0.784314 )
+margin_left = 792.0
+margin_top = 1614.64
+margin_right = 1042.0
+margin_bottom = 1864.64
+rect_scale = Vector2( 1e-05, 1e-05 )
+rect_pivot_offset = Vector2( 125, 125 )
+texture_normal = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="1" type="TextureRect" parent="Control/2/Objects/S0/O30/Button"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+mouse_filter = 2
+texture = SubResource( 42 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="0" type="TextureRect" parent="Control/2/Objects/S0/O30/Button"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+mouse_filter = 2
+texture = SubResource( 43 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="S1" type="Control" parent="Control/2/Objects"]
+margin_right = 40.0
+margin_bottom = 40.0
+mouse_filter = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="O01" type="Control" parent="Control/2/Objects/S1" groups=[
+"Button",
+]]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="4" type="Control" parent="Control/2/Objects/S1/O01"]
+margin_left = 1088.73
+margin_right = 1128.73
+margin_bottom = 40.0
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="TextureButton" parent="Control/2/Objects/S1/O01"]
+modulate = Color( 1, 1, 1, 0.784314 )
+margin_left = 33.7837
+margin_top = 1426.38
+margin_right = 283.784
+margin_bottom = 1676.38
+rect_scale = Vector2( 1e-05, 1e-05 )
+rect_pivot_offset = Vector2( 125, 125 )
+mouse_filter = 2
+texture_normal = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="1" type="TextureRect" parent="Control/2/Objects/S1/O01/Button"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+mouse_filter = 2
+texture = SubResource( 36 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="0" type="TextureRect" parent="Control/2/Objects/S1/O01/Button"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+mouse_filter = 2
+texture = SubResource( 37 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="O11" type="Control" parent="Control/2/Objects/S1" groups=[
+"Button",
+]]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="6" type="Control" parent="Control/2/Objects/S1/O11"]
+margin_left = 1088.73
+margin_right = 1128.73
+margin_bottom = 40.0
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="TextureButton" parent="Control/2/Objects/S1/O11"]
+modulate = Color( 1, 1, 1, 0.784314 )
+margin_left = 283.784
+margin_top = 1586.65
+margin_right = 533.784
+margin_bottom = 1836.65
+rect_scale = Vector2( 1e-05, 1e-05 )
+rect_pivot_offset = Vector2( 125, 125 )
+mouse_filter = 2
+texture_normal = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="1" type="TextureRect" parent="Control/2/Objects/S1/O11/Button"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+mouse_filter = 2
+texture = SubResource( 38 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="0" type="TextureRect" parent="Control/2/Objects/S1/O11/Button"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+mouse_filter = 2
+texture = SubResource( 39 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="O21" type="Control" parent="Control/2/Objects/S1" groups=[
+"Button",
+]]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="8" type="Control" parent="Control/2/Objects/S1/O21"]
+margin_left = 1088.73
+margin_right = 1128.73
+margin_bottom = 40.0
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="TextureButton" parent="Control/2/Objects/S1/O21"]
+modulate = Color( 1, 1, 1, 0.784314 )
+margin_left = 542.0
+margin_top = 1746.08
+margin_right = 792.0
+margin_bottom = 1996.08
+rect_scale = Vector2( 1e-05, 1e-05 )
+rect_pivot_offset = Vector2( 125, 125 )
+mouse_filter = 2
+texture_normal = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="1" type="TextureRect" parent="Control/2/Objects/S1/O21/Button"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+mouse_filter = 2
+texture = SubResource( 40 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="0" type="TextureRect" parent="Control/2/Objects/S1/O21/Button"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+mouse_filter = 2
+texture = SubResource( 41 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="O31" type="Control" parent="Control/2/Objects/S1" groups=[
+"Button",
+]]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="3" type="Control" parent="Control/2/Objects/S1/O31"]
+margin_left = 1088.73
+margin_right = 1128.73
+margin_bottom = 40.0
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="TextureButton" parent="Control/2/Objects/S1/O31"]
+modulate = Color( 1, 1, 1, 0.784314 )
+margin_left = 792.0
+margin_top = 1614.64
+margin_right = 1042.0
+margin_bottom = 1864.64
+rect_scale = Vector2( 1e-05, 1e-05 )
+rect_pivot_offset = Vector2( 125, 125 )
+mouse_filter = 2
+texture_normal = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="1" type="TextureRect" parent="Control/2/Objects/S1/O31/Button"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+mouse_filter = 2
+texture = SubResource( 42 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="0" type="TextureRect" parent="Control/2/Objects/S1/O31/Button"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+mouse_filter = 2
+texture = SubResource( 43 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="S2" type="Control" parent="Control/2/Objects"]
+margin_right = 40.0
+margin_bottom = 40.0
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="O02" type="Control" parent="Control/2/Objects/S2" groups=[
+"Button",
+]]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="2" type="Control" parent="Control/2/Objects/S2/O02"]
+margin_left = 1088.73
+margin_right = 1128.73
+margin_bottom = 40.0
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="TextureButton" parent="Control/2/Objects/S2/O02"]
+modulate = Color( 1, 1, 1, 0.784314 )
+margin_left = 33.7837
+margin_top = 1426.38
+margin_right = 283.784
+margin_bottom = 1676.38
+rect_scale = Vector2( 1e-05, 1e-05 )
+rect_pivot_offset = Vector2( 125, 125 )
+mouse_filter = 2
+texture_normal = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="1" type="TextureRect" parent="Control/2/Objects/S2/O02/Button"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+mouse_filter = 2
+texture = SubResource( 36 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="0" type="TextureRect" parent="Control/2/Objects/S2/O02/Button"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+mouse_filter = 2
+texture = SubResource( 37 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="O12" type="Control" parent="Control/2/Objects/S2" groups=[
+"Button",
+]]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="9" type="Control" parent="Control/2/Objects/S2/O12"]
+margin_left = 1088.73
+margin_right = 1128.73
+margin_bottom = 40.0
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="TextureButton" parent="Control/2/Objects/S2/O12"]
+modulate = Color( 1, 1, 1, 0.784314 )
+margin_left = 283.784
+margin_top = 1586.65
+margin_right = 533.784
+margin_bottom = 1836.65
+rect_scale = Vector2( 1e-05, 1e-05 )
+rect_pivot_offset = Vector2( 125, 125 )
+mouse_filter = 2
+texture_normal = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="1" type="TextureRect" parent="Control/2/Objects/S2/O12/Button"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+mouse_filter = 2
+texture = SubResource( 38 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="0" type="TextureRect" parent="Control/2/Objects/S2/O12/Button"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+mouse_filter = 2
+texture = SubResource( 39 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="O22" type="Control" parent="Control/2/Objects/S2" groups=[
+"Button",
+]]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="7" type="Control" parent="Control/2/Objects/S2/O22"]
+margin_left = 1088.73
+margin_right = 1128.73
+margin_bottom = 40.0
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="TextureButton" parent="Control/2/Objects/S2/O22"]
+modulate = Color( 1, 1, 1, 0.784314 )
+margin_left = 542.0
+margin_top = 1746.08
+margin_right = 792.0
+margin_bottom = 1996.08
+rect_scale = Vector2( 1e-05, 1e-05 )
+rect_pivot_offset = Vector2( 125, 125 )
+mouse_filter = 2
+texture_normal = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="1" type="TextureRect" parent="Control/2/Objects/S2/O22/Button"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+mouse_filter = 2
+texture = SubResource( 40 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="0" type="TextureRect" parent="Control/2/Objects/S2/O22/Button"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+mouse_filter = 2
+texture = SubResource( 41 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="O32" type="Control" parent="Control/2/Objects/S2" groups=[
+"Button",
+]]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="4" type="Control" parent="Control/2/Objects/S2/O32"]
+margin_left = 1088.73
+margin_right = 1128.73
+margin_bottom = 40.0
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="TextureButton" parent="Control/2/Objects/S2/O32"]
+modulate = Color( 1, 1, 1, 0.784314 )
+margin_left = 792.0
+margin_top = 1614.64
+margin_right = 1042.0
+margin_bottom = 1864.64
+rect_scale = Vector2( 1e-05, 1e-05 )
+rect_pivot_offset = Vector2( 125, 125 )
+mouse_filter = 2
+texture_normal = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="1" type="TextureRect" parent="Control/2/Objects/S2/O32/Button"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+mouse_filter = 2
+texture = SubResource( 42 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="0" type="TextureRect" parent="Control/2/Objects/S2/O32/Button"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+mouse_filter = 2
+texture = SubResource( 43 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="S3" type="Control" parent="Control/2/Objects"]
+margin_right = 40.0
+margin_bottom = 40.0
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="O03" type="Control" parent="Control/2/Objects/S3" groups=[
+"Button",
+]]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="3" type="Control" parent="Control/2/Objects/S3/O03"]
+margin_left = 1088.73
+margin_right = 1128.73
+margin_bottom = 40.0
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="TextureButton" parent="Control/2/Objects/S3/O03"]
+modulate = Color( 1, 1, 1, 0.784314 )
+margin_left = 33.7837
+margin_top = 1426.38
+margin_right = 283.784
+margin_bottom = 1676.38
+rect_scale = Vector2( 1e-05, 1e-05 )
+rect_pivot_offset = Vector2( 125, 125 )
+mouse_filter = 2
+texture_normal = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="1" type="TextureRect" parent="Control/2/Objects/S3/O03/Button"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+mouse_filter = 2
+texture = SubResource( 36 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="0" type="TextureRect" parent="Control/2/Objects/S3/O03/Button"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+mouse_filter = 2
+texture = SubResource( 37 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="O13" type="Control" parent="Control/2/Objects/S3" groups=[
+"Button",
+]]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="9" type="Control" parent="Control/2/Objects/S3/O13"]
+margin_left = 1088.73
+margin_right = 1128.73
+margin_bottom = 40.0
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="TextureButton" parent="Control/2/Objects/S3/O13"]
+modulate = Color( 1, 1, 1, 0.784314 )
+margin_left = 283.784
+margin_top = 1586.65
+margin_right = 533.784
+margin_bottom = 1836.65
+rect_scale = Vector2( 1e-05, 1e-05 )
+rect_pivot_offset = Vector2( 125, 125 )
+mouse_filter = 2
+texture_normal = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="1" type="TextureRect" parent="Control/2/Objects/S3/O13/Button"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+mouse_filter = 2
+texture = SubResource( 38 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="0" type="TextureRect" parent="Control/2/Objects/S3/O13/Button"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+mouse_filter = 2
+texture = SubResource( 39 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="O23" type="Control" parent="Control/2/Objects/S3" groups=[
+"Button",
+]]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="4" type="Control" parent="Control/2/Objects/S3/O23"]
+margin_left = 1088.73
+margin_right = 1128.73
+margin_bottom = 40.0
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="TextureButton" parent="Control/2/Objects/S3/O23"]
+modulate = Color( 1, 1, 1, 0.784314 )
+margin_left = 542.0
+margin_top = 1746.08
+margin_right = 792.0
+margin_bottom = 1996.08
+rect_scale = Vector2( 1e-05, 1e-05 )
+rect_pivot_offset = Vector2( 125, 125 )
+mouse_filter = 2
+texture_normal = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="1" type="TextureRect" parent="Control/2/Objects/S3/O23/Button"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+mouse_filter = 2
+texture = SubResource( 40 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="0" type="TextureRect" parent="Control/2/Objects/S3/O23/Button"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+mouse_filter = 2
+texture = SubResource( 41 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="O33" type="Control" parent="Control/2/Objects/S3" groups=[
+"Button",
+]]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="6" type="Control" parent="Control/2/Objects/S3/O33"]
+margin_left = 1088.73
+margin_right = 1128.73
+margin_bottom = 40.0
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="TextureButton" parent="Control/2/Objects/S3/O33"]
+modulate = Color( 1, 1, 1, 0.784314 )
+margin_left = 792.0
+margin_top = 1614.64
+margin_right = 1042.0
+margin_bottom = 1864.64
+rect_scale = Vector2( 1e-05, 1e-05 )
+rect_pivot_offset = Vector2( 125, 125 )
+mouse_filter = 2
+texture_normal = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="1" type="TextureRect" parent="Control/2/Objects/S3/O33/Button"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+mouse_filter = 2
+texture = SubResource( 42 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="0" type="TextureRect" parent="Control/2/Objects/S3/O33/Button"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 35.0
+margin_right = -40.0
+margin_bottom = -40.0
+mouse_filter = 2
+texture = SubResource( 43 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ControlVR" type="TextureRect" parent="." groups=[
+"CtrlVr",
+]]
+visible = false
+anchor_bottom = 1.0
+margin_left = -564.0
+margin_right = 4.0
+texture = SubResource( 44 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ControlVR2" type="TextureRect" parent="ControlVR"]
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -1085.0
+margin_right = -568.0
+texture = SubResource( 45 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Viewport" type="Viewport" parent="."]
+size = Vector2( 512, 512 )
+transparent_bg = true
+usage = 0
+render_target_v_flip = true
+
+[node name="TextureRect5" type="TextureRect" parent="Viewport"]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -512.0
+margin_top = -256.0
+margin_bottom = 1664.0
+texture = SubResource( 1 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect3" type="Sprite" parent="Viewport/TextureRect5"]
+position = Vector2( 160.917, 364.106 )
+rotation = -0.227207
+scale = Vector2( 0.201818, 0.703719 )
+texture = ExtResource( 4 )
+
+[node name="Status" parent="Viewport" instance=ExtResource( 2 )]
+margin_left = 427.634
+margin_top = -0.741638
+margin_right = 427.634
+margin_bottom = 1919.26
+rect_scale = Vector2( 0.312583, 0.52585 )
+
+[node name="Label" type="Label" parent="Viewport"]
+visible = false
+margin_left = 14.3734
+margin_top = 10.868
+margin_right = 326.373
+margin_bottom = 959.868
+text = "Vector"
+clip_text = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureProgress" type="TextureProgress" parent="."]
+visible = false
+margin_left = -595.768
+margin_top = 931.68
+margin_right = -555.768
+margin_bottom = 971.68
+rect_rotation = -28.4097
+rect_scale = Vector2( 1.09017, 1.13521 )
+step = 0.0
+value = 27.0092
+texture_under = ExtResource( 12 )
+texture_progress = ExtResource( 13 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="TextureProgress"]
+margin_left = 88.2109
+margin_top = 70.5687
+margin_right = 130.211
+margin_bottom = 143.569
+custom_fonts/font = SubResource( 46 )
+custom_colors/font_color = Color( 1, 0, 0.521569, 1 )
+text = "5"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tween" type="Tween" parent="."]
+
+[node name="TextureRect3" type="TextureRect" parent="."]
+visible = false
+material = SubResource( 48 )
+margin_left = -1269.0
+margin_top = -142.0
+margin_right = 167.0
+margin_bottom = 2120.0
+texture = ExtResource( 8 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="TextureRect3"]
+position = Vector2( 625, 2013 )
+lifetime = 7.0
+texture = ExtResource( 12 )
+emission_shape = 2
+emission_rect_extents = Vector2( 512, 0 )
+gravity = Vector2( 0, -97 )
+color = Color( 0.14902, 0.72549, 1, 0.376471 )
+
+[node name="TextureRect4" type="Sprite" parent="." groups=[
+"Ctrl",
+]]
+visible = false
+position = Vector2( -940.365, 962.845 )
+scale = Vector2( 3.9464, 3.93881 )
+texture = ExtResource( 17 )
+region_enabled = true
+region_rect = Rect2( 0.37973, -0.0219917, 202.383, 607.164 )
+
+[node name="TextureRect6" type="Sprite" parent="TextureRect4"]
+modulate = Color( 1, 0.996078, 0.929412, 1 )
+show_behind_parent = true
+position = Vector2( -275.332, 10.9588 )
+scale = Vector2( 1.02666, 0.997455 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 320.317, 321.974, 368.093, 580.601 )
+
+[node name="TextureRect5" type="Sprite" parent="." groups=[
+"Ctrl",
+]]
+visible = false
+position = Vector2( -129.88, 947.358 )
+scale = Vector2( 3.9464, 3.93881 )
+texture = ExtResource( 17 )
+region_enabled = true
+region_rect = Rect2( 202.731, -2.10446, 207.714, 619.148 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "Start"
+anims/0 = SubResource( 49 )
+anims/1 = SubResource( 50 )
+anims/2 = SubResource( 51 )
+anims/3 = SubResource( 52 )
+anims/LS2 = SubResource( 53 )
+anims/Start = SubResource( 54 )
+
+[node name="LS" type="AnimationPlayer" parent="."]
+anims/LS = SubResource( 55 )
+anims/LS2 = SubResource( 53 )
+
+[node name="Label" type="Label" parent="."]
+modulate = Color( 0.207843, 0.207843, 0.207843, 1 )
+margin_left = -1058.65
+margin_top = 406.422
+margin_right = -799.652
+margin_bottom = 463.422
+custom_fonts/font = SubResource( 56 )
+text = "ygoy"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="."]
+modulate = Color( 0.207843, 0.207843, 0.207843, 1 )
+margin_left = -1064.23
+margin_top = 571.003
+margin_right = -805.231
+margin_bottom = 628.003
+custom_fonts/font = SubResource( 56 )
+text = "ygoy"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="button_down" from="Control/0/0S2/Button" to="Control/0/0S2" method="_on_Button_button_down"]
+[connection signal="button_down" from="Control/0/Pl/Button" to="Control/0/Pl" method="_on_Button_button_down"]
+[connection signal="button_down" from="Control/0/0C1/Button" to="Control/0/0C1" method="_on_Button_button_down"]
+[connection signal="button_down" from="Control/0/03/Button" to="Control/0/03" method="_on_Button_button_down"]
+[connection signal="button_down" from="Control/0/04/Button" to="Control/0/04" method="_on_Button_button_down"]
+[connection signal="button_down" from="Control/0/05/Button" to="Control/0/05" method="_on_Button_button_down"]
+[connection signal="button_down" from="Control/0/06/Button" to="Control/0/06" method="_on_Button_button_down"]
+[connection signal="button_down" from="Control/0/07/Button" to="Control/0/07" method="_on_Button_button_down"]
+[connection signal="button_down" from="Control/0/M6S/Button" to="Control/0/M6S" method="_on_Button_button_down"]
+[connection signal="button_down" from="Control/0/VR/Button" to="Control/0/VR" method="_on_Button_button_down"]
+[connection signal="button_down" from="Control/0/12/Button" to="Control/0/12" method="_on_Button_button_down"]
+[connection signal="button_down" from="Control/0/13/Button" to="Control/0/13" method="_on_Button_button_down"]
+[connection signal="button_down" from="Control/0/20/Button" to="Control/0/20" method="_on_Button_button_down"]
+[connection signal="button_down" from="Control/0/21/Button" to="Control/0/21" method="_on_Button_button_down"]
+[connection signal="button_down" from="Control/1/M3S/Button" to="Control/1/M3S" method="_on_Button_button_down"]
+[connection signal="button_down" from="Control/1/S4S/Button" to="Control/1/S4S" method="_on_Button_button_down"]
+[connection signal="button_down" from="Control/1/C2S/Button" to="Control/1/C2S" method="_on_Button_button_down"]
+[connection signal="button_down" from="Control/1/1M0/Button" to="Control/1/1M0" method="_on_Button_button_down"]
+[connection signal="button_down" from="Control/1/030/Button" to="Control/1/030" method="_on_Button_button_down"]
+[connection signal="button_down" from="Control/1/110/Button" to="Control/1/110" method="_on_Button_button_down"]
+[connection signal="button_down" from="Control/1/120/Button" to="Control/1/120" method="_on_Button_button_down"]
+[connection signal="button_down" from="Control/1/130/Button" to="Control/1/130" method="_on_Button_button_down"]
+[connection signal="button_down" from="Control/1/200/Button" to="Control/1/200" method="_on_Button_button_down"]
+[connection signal="button_down" from="Control/1/11/Button" to="Control/1/11" method="_on_Button_button_down"]
+[connection signal="button_down" from="Control/1/10/Button" to="Control/1/10" method="_on_Button_button_down"]
+[connection signal="button_down" from="Control/1/09/Button" to="Control/1/09" method="_on_Button_button_down"]
+[connection signal="button_down" from="Control/1/08/Button" to="Control/1/08" method="_on_Button_button_down"]
+[connection signal="button_down" from="Control/1/210/Button" to="Control/1/210" method="_on_Button_button_down"]
+[connection signal="button_down" from="Control/2/2S0/Button" to="Control/2/2S0" method="_on_Button_button_down"]
+[connection signal="button_down" from="Control/2/P00/Button" to="Control/2/P00" method="_on_Button_button_down"]
+[connection signal="button_down" from="Control/2/P10/Button" to="Control/2/P10" method="_on_Button_button_down"]
+[connection signal="button_down" from="Control/2/P20/Button" to="Control/2/P20" method="_on_Button_button_down"]
+[connection signal="button_down" from="Control/2/P30/Button" to="Control/2/P30" method="_on_Button_button_down"]
+[connection signal="button_down" from="Control/2/R1S/Button" to="Control/2/R1S" method="_on_Button_button_down"]
+[connection signal="button_up" from="Control/2/R1S/Button" to="Control/2/R1S" method="_on_Button_button_up"]
+[connection signal="button_down" from="Control/2/11/Button" to="Control/2/11" method="_on_Button_button_down"]
+[connection signal="button_down" from="Control/2/10/Button" to="Control/2/10" method="_on_Button_button_down"]
+[connection signal="button_down" from="Control/2/09/Button" to="Control/2/09" method="_on_Button_button_down"]
+[connection signal="button_down" from="Control/2/08/Button" to="Control/2/08" method="_on_Button_button_down"]
+[connection signal="button_down" from="Control/2/Objects/S0/O00/Button" to="Control/2/Objects/S0/O00" method="_on_Button_button_down"]
+[connection signal="button_up" from="Control/2/Objects/S0/O00/Button" to="Control/2/Objects/S0/O00" method="_on_Button_button_up"]
+[connection signal="button_down" from="Control/2/Objects/S0/O10/Button" to="Control/2/Objects/S0/O10" method="_on_Button_button_down"]
+[connection signal="button_up" from="Control/2/Objects/S0/O10/Button" to="Control/2/Objects/S0/O10" method="_on_Button_button_up"]
+[connection signal="button_down" from="Control/2/Objects/S0/O20/Button" to="Control/2/Objects/S0/O20" method="_on_Button_button_down"]
+[connection signal="button_up" from="Control/2/Objects/S0/O20/Button" to="Control/2/Objects/S0/O20" method="_on_Button_button_up"]
+[connection signal="button_down" from="Control/2/Objects/S0/O30/Button" to="Control/2/Objects/S0/O30" method="_on_Button_button_down"]
+[connection signal="button_up" from="Control/2/Objects/S0/O30/Button" to="Control/2/Objects/S0/O30" method="_on_Button_button_up"]
+[connection signal="button_down" from="Control/2/Objects/S1/O01/Button" to="Control/2/Objects/S1/O01" method="_on_Button_button_down"]
+[connection signal="button_up" from="Control/2/Objects/S1/O01/Button" to="Control/2/Objects/S1/O01" method="_on_Button_button_up"]
+[connection signal="button_down" from="Control/2/Objects/S1/O11/Button" to="Control/2/Objects/S1/O11" method="_on_Button_button_down"]
+[connection signal="button_up" from="Control/2/Objects/S1/O11/Button" to="Control/2/Objects/S1/O11" method="_on_Button_button_up"]
+[connection signal="button_down" from="Control/2/Objects/S1/O21/Button" to="Control/2/Objects/S1/O21" method="_on_Button_button_down"]
+[connection signal="button_up" from="Control/2/Objects/S1/O21/Button" to="Control/2/Objects/S1/O21" method="_on_Button_button_up"]
+[connection signal="button_down" from="Control/2/Objects/S1/O31/Button" to="Control/2/Objects/S1/O31" method="_on_Button_button_down"]
+[connection signal="button_up" from="Control/2/Objects/S1/O31/Button" to="Control/2/Objects/S1/O31" method="_on_Button_button_up"]
+[connection signal="button_down" from="Control/2/Objects/S2/O02/Button" to="Control/2/Objects/S2/O02" method="_on_Button_button_down"]
+[connection signal="button_up" from="Control/2/Objects/S2/O02/Button" to="Control/2/Objects/S2/O02" method="_on_Button_button_up"]
+[connection signal="button_down" from="Control/2/Objects/S2/O12/Button" to="Control/2/Objects/S2/O12" method="_on_Button_button_down"]
+[connection signal="button_up" from="Control/2/Objects/S2/O12/Button" to="Control/2/Objects/S2/O12" method="_on_Button_button_up"]
+[connection signal="button_down" from="Control/2/Objects/S2/O22/Button" to="Control/2/Objects/S2/O22" method="_on_Button_button_down"]
+[connection signal="button_up" from="Control/2/Objects/S2/O22/Button" to="Control/2/Objects/S2/O22" method="_on_Button_button_up"]
+[connection signal="button_down" from="Control/2/Objects/S2/O32/Button" to="Control/2/Objects/S2/O32" method="_on_Button_button_down"]
+[connection signal="button_up" from="Control/2/Objects/S2/O32/Button" to="Control/2/Objects/S2/O32" method="_on_Button_button_up"]
+[connection signal="button_down" from="Control/2/Objects/S3/O03/Button" to="Control/2/Objects/S3/O03" method="_on_Button_button_down"]
+[connection signal="button_up" from="Control/2/Objects/S3/O03/Button" to="Control/2/Objects/S3/O03" method="_on_Button_button_up"]
+[connection signal="button_down" from="Control/2/Objects/S3/O13/Button" to="Control/2/Objects/S3/O13" method="_on_Button_button_down"]
+[connection signal="button_up" from="Control/2/Objects/S3/O13/Button" to="Control/2/Objects/S3/O13" method="_on_Button_button_up"]
+[connection signal="button_down" from="Control/2/Objects/S3/O23/Button" to="Control/2/Objects/S3/O23" method="_on_Button_button_down"]
+[connection signal="button_up" from="Control/2/Objects/S3/O23/Button" to="Control/2/Objects/S3/O23" method="_on_Button_button_up"]
+[connection signal="button_down" from="Control/2/Objects/S3/O33/Button" to="Control/2/Objects/S3/O33" method="_on_Button_button_down"]
+[connection signal="button_up" from="Control/2/Objects/S3/O33/Button" to="Control/2/Objects/S3/O33" method="_on_Button_button_up"]
+[connection signal="tween_completed" from="Tween" to="Control/0/0S2" method="_on_Tween_tween_completed"]

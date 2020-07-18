@@ -1,0 +1,37 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Scripts/Spawn.gd" type="Script" id=1]
+
+[sub_resource type="SphereShape" id=1]
+radius = 4.42299
+
+[sub_resource type="CubeMesh" id=2]
+size = Vector3( 5, 5, 0.5 )
+
+[node name="Obs" type="Spatial"]
+
+[node name="SpatialW" type="Spatial" parent="."]
+
+[node name="Spawn" type="Spatial" parent="SpatialW"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 19.3906, 0 )
+script = ExtResource( 1 )
+
+[node name="Area" type="Area" parent="SpatialW"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 23.779, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="SpatialW/Area"]
+shape = SubResource( 1 )
+
+[node name="MeshInstance" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 23.4278, 5.9801 )
+visible = false
+mesh = SubResource( 2 )
+material/0 = null
+
+[node name="MeshInstance2" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 23.4278, -6.09988 )
+visible = false
+mesh = SubResource( 2 )
+material/0 = null
+[connection signal="area_entered" from="SpatialW/Area" to="SpatialW/Spawn" method="_on_Area_area_entered"]
+[connection signal="area_exited" from="SpatialW/Area" to="SpatialW/Spawn" method="_on_Area_area_exited"]

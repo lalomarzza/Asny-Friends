@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=2]
+
+[sub_resource type="PhysicsMaterial" id=1]
+friction = 0.0
+bounce = 5.0
+
+[sub_resource type="SphereShape" id=2]
+radius = 0.889429
+
+[node name="Camera" type="RigidBody"]
+transform = Transform( -0.93262, 0.0508838, 0.357253, 0.0454965, 0.998688, -0.0234736, -0.357979, -0.00563818, -0.933712, 1.80561, 50.1926, -5.3306 )
+physics_material_override = SubResource( 1 )
+gravity_scale = 0.0
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 1, 7.45058e-09, -2.98023e-08, 0, 0.964137, -0.265405, -2.98023e-08, 0.265405, 0.964137, 0, 0, 0 )
+near = 0.5
+far = 150.0
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+shape = SubResource( 2 )

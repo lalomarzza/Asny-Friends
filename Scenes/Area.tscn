@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="SphereShape" id=4]
+radius = 32.3225
+
+[node name="Area" type="Area" groups=[
+"AreaPlayer",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 50.8227, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.187658, -6.31946, -10.3421 )
+shape = SubResource( 4 )

@@ -1,0 +1,80 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Scripts/Player.gd" type="Script" id=1]
+
+[sub_resource type="PhysicsMaterial" id=1]
+friction = 0.5
+bounce = 5.0
+absorbent = true
+
+[sub_resource type="SpatialMaterial" id=2]
+flags_transparent = true
+albedo_color = Color( 0, 0.380392, 1, 0.352941 )
+metallic_specular = 0.87
+roughness = 0.31
+
+[sub_resource type="SphereMesh" id=3]
+material = SubResource( 2 )
+
+[sub_resource type="CapsuleShape" id=4]
+radius = 0.445702
+height = 0.563965
+
+[sub_resource type="PrismMesh" id=5]
+
+[node name="Player0" type="RigidBody" groups=[
+"Player",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 55, 0 )
+mode = 2
+mass = 2.0
+physics_material_override = SubResource( 1 )
+script = ExtResource( 1 )
+
+[node name="Look" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.35933 )
+
+[node name="MI" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.324947, 0 )
+visible = false
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+shape = SubResource( 4 )
+
+[node name="Player" type="Spatial" parent="."]
+transform = Transform( -0.8, 0, -3.11531e-07, 0, 0.8, 0, 3.11531e-07, 0, -0.8, 0, 0, 0 )
+
+[node name="Camera" type="Position3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 14, 6 )
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="Camera2" type="Position3D" parent="."]
+transform = Transform( -0.397396, 0.276311, 0.87506, -0.10436, 0.933796, -0.342251, -0.911694, -0.22733, -0.342251, 3.01346, -0.476032, -1.79302 )
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="CameraVR" type="Position3D" parent="."]
+transform = Transform( 0.999665, -0.00324196, -0.0256596, 0.0039317, 0.999632, 0.0268758, 0.025563, -0.0269677, 0.99931, -0.0403618, 0.876598, -0.21562 )
+
+[node name="Camera2" type="Position3D" parent="CameraVR"]
+transform = Transform( 0.99863, 6.40284e-10, 0.052336, 6.40284e-10, 1, 3.72529e-09, -0.052336, 0, 0.998629, 0.153373, -0.214901, 1.01841 )
+
+[node name="Dir" type="Spatial" parent="."]
+
+[node name="MeshInstance" type="MeshInstance" parent="Dir"]
+transform = Transform( 1, 0, 0, 0, -0.0135084, 0.148284, 0, -0.999909, -0.00200327, 0, 0, 0 )
+visible = false
+mesh = SubResource( 5 )
+material/0 = null
+
+[node name="you" type="Label" parent="."]
+margin_right = 40.0
+margin_bottom = 14.0
+__meta__ = {
+"_edit_use_anchors_": false
+}

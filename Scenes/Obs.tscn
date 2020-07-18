@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scripts/Spawn.gd" type="Script" id=1]
+
+[sub_resource type="SphereShape" id=3]
+radius = 6.02679
+
+[node name="Obs" type="Spatial"]
+
+[node name="Spatial" type="Spatial" parent="."]
+
+[node name="Spawn" type="Spatial" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 47.8359, 0 )
+script = ExtResource( 1 )
+
+[node name="Area" type="Area" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 50, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Spatial/Area"]
+shape = SubResource( 3 )
+[connection signal="area_entered" from="Spatial/Area" to="Spatial/Spawn" method="_on_Area_area_entered"]
+[connection signal="area_exited" from="Spatial/Area" to="Spatial/Spawn" method="_on_Area_area_exited"]
